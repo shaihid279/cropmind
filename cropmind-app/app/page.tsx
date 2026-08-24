@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-green-50 flex flex-col items-center justify-center p-6">
       <h1 className="text-3xl font-bold text-green-800 mb-8">
-        🌾 CropMind
+        🌾 KisanScan
       </h1>
 
       <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-sm space-y-4">

@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
-export default function InputPage() {
+function InputContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -69,5 +69,13 @@ export default function InputPage() {
         </button>
       </div>
     </main>
+  );
+}
+
+export default function InputPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <InputContent />
+    </Suspense>
   );
 }

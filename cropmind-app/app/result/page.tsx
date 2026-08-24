@@ -1,9 +1,10 @@
 "use client";
 
+import { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import crops from "../../data/crops";
 
-export default function ResultPage() {
+function ResultContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -13,7 +14,6 @@ export default function ResultPage() {
 
   const cropData: any = (crops as any)[cropKey];
 
-  // Dummy advice logic — Day 4 mein isko Claude API se replace karenge
   const dummyAdvice = cropData
     ? `${cropData.name} ke liye salah: Irrigation - ${cropData.irrigation}. Fertilizer - ${cropData.fertilizer}. Agar disease dikhe toh: ${cropData.commonDiseases[0]?.solution || "Local expert se sampark karein"}.`
     : "Crop data nahi mila, kripya sahi crop select karein.";
@@ -44,5 +44,13 @@ export default function ResultPage() {
         </button>
       </div>
     </main>
+  );
+}
+
+export default function ResultPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ResultContent />
+    </Suspense>
   );
 }
