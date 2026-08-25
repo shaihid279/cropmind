@@ -2,21 +2,19 @@
 
 import { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import crops from "../../data/crops";
+import { getAdviceByIndex } from "../lib/adviceLookup";
 
 function ResultContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const cropKey = searchParams.get("crop") || "";
   const district = searchParams.get("district") || "";
   const question = searchParams.get("question") || "";
+  const lang = searchParams.get("lang") || "english";
+  const predictedIndex = parseInt(searchParams.get("predictedIndex") || "-1");
 
-  const cropData: any = (crops as any)[cropKey];
-
-  const dummyAdvice = cropData
-    ? `${cropData.name} ke liye salah: Irrigation - ${cropData.irrigation}. Fertilizer - ${cropData.fertilizer}. Agar disease dikhe toh: ${cropData.commonDiseases[0]?.solution || "Local expert se sampark karein"}.`
-    : "Crop data nahi mila, kripya sahi crop select karein.";
+  const hasImageResult = predictedIndex >= 0;
+  const advice = hasImageResult ? getAdviceByIndex(predictedIndex, lang) : null;
 
   return (
     <main className="min-h-screen bg-green-50 flex flex-col items-center justify-center p-6">
@@ -26,15 +24,48 @@ function ResultContent() {
 
       <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-md space-y-4">
         <div className="text-sm text-gray-600">
-          <p><strong>Crop:</strong> {cropData?.name || "N/A"}</p>
           <p><strong>District:</strong> {district || "N/A"}</p>
-          <p><strong>Your Question:</strong> {question || "N/A"}</p>
+          {question && <p><strong>Your Question:</strong> {question}</p>}
         </div>
 
-        <div className="border-t pt-4">
-          <h2 className="font-semibold text-green-700 mb-2">Advice:</h2>
-          <p className="text-gray-800">{dummyAdvice}</p>
-        </div>
+        {hasImageResult && advice ? (
+          <div className="border-t pt-4 space-y-3">
+            <div>
+              <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">
+                {advice.crop}
+              </span>
+              <span className="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded ml-2">
+                {advice.disease} ({advice.severity})
+              </span>
+            </div>
+            <div>
+              <h3 className="font-semibold text-green-700 text-sm">Symptoms:</h3>
+              <p className="text-gray-800 text-sm">{advice.symptoms}</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-green-700 text-sm">Treatment:</h3>
+              <p className="text-gray-800 text-sm">{advice.treatment}</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-green-700 text-sm">Prevention:</h3>
+              <p className="text-gray-800 text-sm">{advice.prevention}</p>
+            </div>
+            <details className="text-sm">
+              <summary className="font-semibold text-green-700 cursor-pointer">
+                More Info (Sowing, Irrigation, Fertilizer)
+              </summary>
+              <p className="mt-2"><strong>Sowing:</strong> {advice.sowing}</p>
+              <p className="mt-1"><strong>Irrigation:</strong> {advice.irrigation}</p>
+              <p className="mt-1"><strong>Fertilizer:</strong> {advice.fertilizer}</p>
+            </details>
+          </div>
+        ) : (
+          <div className="border-t pt-4">
+            <p className="text-gray-800 text-sm">
+              Koi photo upload nahi hui. Photo upload karke crop ki disease detect karwa sakte ho.
+            </p>
+          </div>
+        )}
 
         <button
           onClick={() => router.push("/")}
