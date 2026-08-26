@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useState } from "react";
+import { Suspense, useState, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 function InputContent() {
@@ -15,6 +15,44 @@ function InputContent() {
   const [image, setImage] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [listening, setListening] = useState(false);
+  const recognitionRef = useRef<any>(null);
+
+  const langMap: Record<string, string> = {
+    english: "en-IN",
+    hindi: "hi-IN",
+    marathi: "mr-IN",
+  };
+
+  const toggleVoiceInput = () => {
+  // @ts-ignore
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SpeechRecognition) {
+    alert("Voice input is not supported in this browser.");
+    return;
+  }
+    if (listening) {
+      recognitionRef.current?.stop();
+      setListening(false);
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = langMap[lang] || "en-IN";
+    recognition.interimResults = false;
+    recognitionRef.current = recognition;
+
+    recognition.onstart = () => setListening(true);
+    recognition.onend = () => setListening(false);
+    recognition.onerror = () => setListening(false);
+
+    recognition.onresult = (event: any) => {
+      const transcript = event.results[0][0].transcript;
+      setQuestion((prev) => (prev ? prev + " " + transcript : transcript));
+    };
+
+    recognition.start();
+  };
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
@@ -44,8 +82,8 @@ function InputContent() {
       .div(255.0);
 
     const output = model.predict(tensor);
-const data = (await output.data()) as unknown as number[];
-const predictedIndex = data.indexOf(Math.max(...Array.from(data))); 
+    const data = (await output.data()) as unknown as number[];
+    const predictedIndex = data.indexOf(Math.max(...Array.from(data)));
 
     tensor.dispose();
     output.dispose();
@@ -98,7 +136,7 @@ const predictedIndex = data.indexOf(Math.max(...Array.from(data)));
           What's the problem? 🔍
         </h1>
         <p className="text-sm text-gray-500 mt-1">
-          Describe it or upload a photo — we'll figure it out
+          Type, speak, or upload a photo — we'll figure it out
         </p>
       </div>
 
@@ -107,12 +145,32 @@ const predictedIndex = data.indexOf(Math.max(...Array.from(data)));
           <label className="text-sm font-semibold text-gray-700 mb-2 block">
             💬 Your Question (optional)
           </label>
-          <textarea
-            className="w-full border-2 border-gray-100 rounded-2xl p-3.5 h-24 text-gray-700 bg-gray-50 focus:border-green-400 focus:bg-white focus:outline-none transition-all resize-none"
-            placeholder="e.g. Mera crop ka patta yellow ho raha hai..."
-            value={question}
-            onChange={(e) => setQuestion(e.target.value)}
-          />
+          <div className="relative">
+            <textarea
+              className="w-full border-2 border-gray-100 rounded-2xl p-3.5 pr-12 h-24 text-gray-700 bg-gray-50 focus:border-green-400 focus:bg-white focus:outline-none transition-all resize-none"
+              placeholder="e.g. Mera crop ka patta yellow ho raha hai..."
+              value={question}
+              onChange={(e) => setQuestion(e.target.value)}
+            />
+            <button
+              type="button"
+              onClick={toggleVoiceInput}
+              className={`absolute right-2.5 bottom-2.5 w-9 h-9 rounded-full flex items-center justify-center transition-all ${
+                listening
+                  ? "bg-red-500 text-white animate-pulse shadow-lg shadow-red-200"
+                  : "bg-green-100 text-green-700 hover:bg-green-200"
+              }`}
+              title="Voice input"
+            >
+              {listening ? "⏹" : "🎤"}
+            </button>
+          </div>
+          {listening && (
+            <p className="text-xs text-red-500 mt-1.5 flex items-center gap-1">
+              <span className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></span>
+              Listening... bolo
+            </p>
+          )}
         </div>
 
         <div>
@@ -175,4 +233,4 @@ export default function InputPage() {
       <InputContent />
     </Suspense>
   );
-}
+} 

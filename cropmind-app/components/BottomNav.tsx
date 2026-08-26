@@ -6,13 +6,13 @@ const tabs = [
   { path: "/", icon: "🏠", label: "Home" },
   { path: "/my-crops", icon: "🌱", label: "My Crops" },
   { path: "/input", icon: "📷", label: "Scan" },
-  { path: "/shop", icon: "🛒", label: "Shop" },
+  { path: "/assistant", icon: "💬", label: "AI Chat" },
   { path: "/profile", icon: "👤", label: "Profile" },
-];
+]; 
 
 export default function BottomNav() {
   const pathname = usePathname();
-  const router = useRouter();
+  const router = useRouter(); 
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] z-50">
