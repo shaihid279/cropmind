@@ -2,7 +2,7 @@
 
 import { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { getAdviceByIndex } from "../../lib/adviceLookup"; 
+import { getAdviceByIndex } from "../../lib/adviceLookup";
 
 function severityStyle(severity: string) {
   const s = severity.toLowerCase();
@@ -13,6 +13,23 @@ function severityStyle(severity: string) {
   if (s.includes("none") || s.includes("healthy") || s.includes("नाही") || s.includes("कोई नहीं"))
     return "bg-green-100 text-green-700 border-green-200";
   return "bg-gray-100 text-gray-700 border-gray-200";
+}
+
+const langMap: Record<string, string> = {
+  english: "en-IN",
+  hindi: "hi-IN",
+  marathi: "mr-IN",
+};
+
+function speakText(text: string, lang: string) {
+  if (!("speechSynthesis" in window)) {
+    alert("Voice output not supported in this browser.");
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = langMap[lang] || "en-IN";
+  window.speechSynthesis.speak(utterance);
 }
 
 function InfoRow({ icon, title, text }: { icon: string; title: string; text: string }) {
@@ -57,7 +74,6 @@ function ResultContent() {
       </div>
 
       <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl shadow-green-100 border border-white p-7 w-full max-w-md space-y-5">
-        {/* Meta info */}
         <div className="flex flex-wrap gap-2 text-xs">
           {district && (
             <span className="bg-blue-100 text-blue-700 px-2.5 py-1 rounded-full font-medium">
@@ -91,6 +107,18 @@ function ResultContent() {
             >
               Severity: {advice.severity}
             </span>
+
+            <button
+              onClick={() =>
+                speakText(
+                  `${advice.disease}. ${advice.symptoms}. ${advice.treatment}`,
+                  lang
+                )
+              }
+              className="w-full bg-blue-50 text-blue-700 rounded-2xl p-3 font-semibold text-sm flex items-center justify-center gap-2 hover:bg-blue-100 transition-colors"
+            >
+              🔊 Sunein / Listen
+            </button>
 
             <div className="space-y-4 pt-2">
               <InfoRow icon="🔎" title="Symptoms" text={advice.symptoms} />
@@ -135,4 +163,4 @@ export default function ResultPage() {
       <ResultContent />
     </Suspense>
   );
-}
+} 
