@@ -2,8 +2,6 @@
 
 import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import * as tf from "@tensorflow/tfjs";
-import { TFLiteModel, loadTFLiteModel } from "@tensorflow/tfjs-tflite";
 
 function InputContent() {
   const router = useRouter();
@@ -27,7 +25,13 @@ function InputContent() {
   };
 
   const runModelOnImage = async (file: File): Promise<number> => {
-    const model: TFLiteModel = await loadTFLiteModel("/model/cropmind_model.tflite");
+    // @ts-ignore
+    const tflite = window.tflite;
+    // @ts-ignore
+    const tf = window.tf;
+
+    const model = await tflite.loadTFLiteModel("/model/cropmind_model.tflite");
+
     const imgElement = document.createElement("img");
     imgElement.src = URL.createObjectURL(file);
     await new Promise((resolve) => (imgElement.onload = resolve));
@@ -39,20 +43,13 @@ function InputContent() {
       .toFloat()
       .div(255.0);
 
-    const prediction = model.predict(tensor as any);
-
-const output = Array.isArray(prediction)
-  ? prediction[0]
-  : prediction instanceof tf.Tensor
-    ? prediction
-    : Object.values(prediction)[0]; 
-
-    const data = await output.data();
-    const values = Array.from(data) as number[];
-const predictedIndex = values.indexOf(Math.max(...values)); 
+    const output = model.predict(tensor);
+const data = (await output.data()) as unknown as number[];
+const predictedIndex = data.indexOf(Math.max(...Array.from(data))); 
 
     tensor.dispose();
     output.dispose();
+
     return predictedIndex;
   };
 
