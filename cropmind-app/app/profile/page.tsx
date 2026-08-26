@@ -15,7 +15,6 @@ export default function ProfilePage() {
   const [checking, setChecking] = useState(true);
 
   const [isSignup, setIsSignup] = useState(false);
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -60,7 +59,6 @@ export default function ProfilePage() {
     );
   }
 
-  // LOGGED IN VIEW
   if (user) {
     return (
       <main className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-lime-50 flex flex-col items-center p-6 pt-16">
@@ -88,7 +86,6 @@ export default function ProfilePage() {
     );
   }
 
-  // LOGIN / SIGNUP VIEW
   return (
     <main className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-lime-50 flex flex-col items-center justify-center p-6">
       <div className="flex flex-col items-center mb-8">
@@ -99,7 +96,7 @@ export default function ProfilePage() {
           {isSignup ? "Create Account" : "Welcome Back"}
         </h1>
         <p className="text-sm text-gray-500 mt-1">
-          {isSignup ? "Join KisanScan today" : "Login to continue"}
+          {isSignup ? "Join KisanScan today" : "Login to save your history"}
         </p>
       </div>
 
