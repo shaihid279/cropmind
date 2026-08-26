@@ -3,6 +3,8 @@ import Script from "next/script";
 import "./globals.css";
 import BottomNav from "../components/BottomNav";
 import { ToastProvider } from "../components/Toast";
+import { LanguageProvider } from "../components/LanguageContext";
+import OnboardingGate from "../components/OnboardingGate";
 
 export const metadata: Metadata = {
   title: "KisanScan",
@@ -12,18 +14,22 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode; 
 }) {
   return (
     <html lang="en">
       <body className="bg-gray-50">
-        <ToastProvider>
-          <div className="pb-20">{children}</div>
-          <BottomNav />
-        </ToastProvider>
+        <LanguageProvider>
+          <ToastProvider>
+            <OnboardingGate>
+              <div className="pb-20">{children}</div>
+              <BottomNav />
+            </OnboardingGate>
+          </ToastProvider>
+        </LanguageProvider>
         <Script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js" strategy="beforeInteractive" />
         <Script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.10/dist/tf-tflite.min.js" strategy="beforeInteractive" />
       </body>
     </html>
   );
-} 
+}
