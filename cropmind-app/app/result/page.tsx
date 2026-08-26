@@ -2,7 +2,7 @@
 
 import { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { getAdviceByIndex } from "../lib/adviceLookup";
+import { getAdviceByIndex } from "../../lib/adviceLookup"; 
 
 function severityStyle(severity: string) {
   const s = severity.toLowerCase();
