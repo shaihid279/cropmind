@@ -29,6 +29,18 @@ export const translations: Record<Lang, Record<string, string>> = {
     whatsProblem: "What's the problem?",
     describeOrPhoto: "Describe it or upload a photo — we'll figure it out",
     listen: "Listen",
+
+    riskTitle: "Preventive Risk Score",
+riskSubtitle: "Based on today's weather in your area",
+needsInternet: "This feature needs internet connection",
+needsInternetDesc: "Connect to the internet to see today's disease risk based on live weather.",
+riskLow: "Low Risk",
+riskMedium: "Medium Risk",
+riskHigh: "High Risk — Spray Preventively",
+temperature: "Temperature",
+humidity: "Humidity",
+condition: "Condition",
+
   },
   hindi: {
     appName: "किसानस्कैन",
@@ -58,6 +70,18 @@ export const translations: Record<Lang, Record<string, string>> = {
     whatsProblem: "समस्या क्या है?",
     describeOrPhoto: "बताएं या फोटो अपलोड करें — हम पता लगा लेंगे",
     listen: "सुनें",
+riskTitle: "निवारक जोखिम स्कोर",
+riskSubtitle: "आपके क्षेत्र के आज के मौसम पर आधारित",
+needsInternet: "इस सुविधा के लिए इंटरनेट चाहिए",
+needsInternetDesc: "आज के मौसम पर आधारित रोग जोखिम देखने के लिए इंटरनेट से जुड़ें।",
+riskLow: "कम जोखिम",
+riskMedium: "मध्यम जोखिम",
+riskHigh: "अधिक जोखिम — निवारक छिड़काव करें",
+temperature: "तापमान",
+humidity: "नमी",
+condition: "मौसम की स्थिति",
+
+
   },
   marathi: {
     appName: "किसानस्कॅन",
@@ -87,5 +111,17 @@ export const translations: Record<Lang, Record<string, string>> = {
     whatsProblem: "समस्या काय आहे?",
     describeOrPhoto: "सांगा किंवा फोटो अपलोड करा — आम्ही शोधून काढू",
     listen: "ऐका",
+
+riskTitle: "प्रतिबंधात्मक जोखीम स्कोअर",
+riskSubtitle: "तुमच्या भागातील आजच्या हवामानावर आधारित",
+needsInternet: "या वैशिष्ट्यासाठी इंटरनेट आवश्यक आहे",
+needsInternetDesc: "आजच्या हवामानावर आधारित रोग जोखीम पाहण्यासाठी इंटरनेटशी कनेक्ट करा.",
+riskLow: "कमी जोखीम",
+riskMedium: "मध्यम जोखीम",
+riskHigh: "जास्त जोखीम — प्रतिबंधात्मक फवारणी करा",
+temperature: "तापमान",
+humidity: "आर्द्रता",
+condition: "हवामान स्थिती",  
+
   },
 }; 

@@ -110,6 +110,13 @@ export default function Home() {
 >
   📡 Check Outbreak Radar
 </button>
+<button
+  onClick={() => router.push("/risk")}
+  className="w-full mt-3 bg-blue-50 text-blue-700 rounded-2xl p-3 font-semibold text-sm flex items-center justify-center gap-2 hover:bg-blue-100 transition-colors"
+>
+  🌤️ Preventive Risk Score
+</button> 
+
 
       </div>
 
