@@ -66,7 +66,8 @@ function InputContent() {
     // @ts-ignore
     const tflite = window.tflite;
     // @ts-ignore
-    const tf = window.tf;
+    const tf = window.tf;  
+    tflite.setWasmPath("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.10/dist/");
 
     const model = await tflite.loadTFLiteModel("/model/cropmind_model.tflite");
 
@@ -105,7 +106,7 @@ function InputContent() {
         predictedIndex = await runModelOnImage(image);
       } catch (err) {
         console.error(err);
-        alert("Photo analyze karne mein problem aayi, dobara try karo.");
+alert("Photo analyze karne mein problem aayi: " + (err as any)?.message); 
         setLoading(false);
         return;
       }
