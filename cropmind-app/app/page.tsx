@@ -104,6 +104,13 @@ export default function Home() {
         >
           Get Advice →
         </button>
+<button
+  onClick={() => router.push("/outbreak")}
+  className="w-full mt-3 bg-amber-50 text-amber-700 rounded-2xl p-3 font-semibold text-sm flex items-center justify-center gap-2 hover:bg-amber-100 transition-colors"
+>
+  📡 Check Outbreak Radar
+</button>
+
       </div>
 
       <p className="text-xs text-gray-400 mt-6">

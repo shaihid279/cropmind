@@ -4,6 +4,10 @@ import { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getAdviceByIndex } from "../../lib/adviceLookup";
 
+import { useEffect } from "react";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
+import { db } from "../../firebase";
+
 function severityStyle(severity: string) {
   const s = severity.toLowerCase();
   if (s.includes("high") || s.includes("अधिक") || s.includes("जास्त"))
@@ -57,7 +61,27 @@ function ResultContent() {
 
   const hasImageResult = predictedIndex >= 0;
   const advice = hasImageResult ? getAdviceByIndex(predictedIndex, lang) : null;
-
+  
+useEffect(() => {
+  if (
+    hasImageResult &&
+    advice &&
+    advice.disease !== "Not Found" &&
+    !advice.severity.toLowerCase().includes("none") &&
+    !advice.severity.toLowerCase().includes("नाही") &&
+    !advice.severity.toLowerCase().includes("कोई नहीं")
+  ) {
+    addDoc(collection(db, "outbreak_reports"), {
+      cropKey: advice.key,
+      cropName: advice.crop,
+      disease: advice.disease,
+      district: district || "Unknown",
+      severity: advice.severity,
+      timestamp: Timestamp.now(),
+    }).catch(() => {});
+  }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [hasImageResult]); 
   return (
     <main className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-lime-50 flex flex-col items-center justify-center p-6">
       <div className="w-full max-w-md mb-4 text-center">
