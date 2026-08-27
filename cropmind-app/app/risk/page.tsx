@@ -20,18 +20,49 @@ export default function RiskPage() {
   const [district, setDistrict] = useState("");
   const [data, setData] = useState<RiskData | null>(null);
   const [loading, setLoading] = useState(false);
+  const [locating, setLocating] = useState(false);
   const [error, setError] = useState("");
 
   useEffect(() => {
     setIsOnline(navigator.onLine);
-    const profile = localStorage.getItem("kisanscan_profile");
-    if (profile) {
-      const parsed = JSON.parse(profile);
-      if (parsed.state) setDistrict(parsed.state);
-    }
   }, []);
 
-  const fetchRisk = async () => {
+  const fetchRiskByLocation = () => {
+    if (!navigator.geolocation) {
+      setError("Location feature is browser mein support nahi hai");
+      return;
+    }
+    setLocating(true);
+    setError("");
+
+    navigator.geolocation.getCurrentPosition(
+      async (position) => {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        setLocating(false);
+        setLoading(true);
+        try {
+          const res = await fetch(`/api/risk-score?lat=${lat}&lon=${lon}`);
+          const json = await res.json();
+          if (json.error) {
+            setError(json.error);
+          } else {
+            setData(json);
+            setDistrict(json.district);
+          }
+        } catch {
+          setError("Kuch problem aayi, dobara try karo");
+        }
+        setLoading(false);
+      },
+      () => {
+        setLocating(false);
+        setError("Location access allow nahi hua. Manually district likho.");
+      }
+    );
+  };
+
+  const fetchRiskByDistrict = async () => {
     if (!district.trim()) {
       setError("District/area naam daalo");
       return;
@@ -46,7 +77,7 @@ export default function RiskPage() {
       } else {
         setData(json);
       }
-    } catch (err) {
+    } catch {
       setError("Kuch problem aayi, dobara try karo");
     }
     setLoading(false);
@@ -78,25 +109,48 @@ export default function RiskPage() {
         </div>
       ) : (
         <>
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl shadow-green-100 border border-white p-6 mb-6">
-            <label className="text-sm font-semibold text-gray-700 mb-2 block">District</label>
-            <div className="flex gap-2">
-              <input
-                type="text"
-                className="flex-1 border-2 border-gray-100 rounded-2xl p-3 bg-gray-50 focus:border-green-400 focus:outline-none"
-                placeholder="e.g. Ahmednagar"
-                value={district}
-                onChange={(e) => setDistrict(e.target.value)}
-              />
-              <button
-                onClick={fetchRisk}
-                disabled={loading}
-                className="bg-green-600 text-white rounded-2xl px-5 font-semibold disabled:opacity-60"
-              >
-                {loading ? "..." : "Check"}
-              </button>
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl shadow-green-100 border border-white p-6 mb-6 space-y-4">
+            <button
+              onClick={fetchRiskByLocation}
+              disabled={locating}
+              className="w-full bg-blue-50 text-blue-700 rounded-2xl p-3.5 font-semibold flex items-center justify-center gap-2 disabled:opacity-60"
+            >
+              {locating ? (
+                <>
+                  <span className="w-4 h-4 border-2 border-blue-700 border-t-transparent rounded-full animate-spin"></span>
+                  Location dhundh rahe hain...
+                </>
+              ) : (
+                <>📍 Use My Location</>
+              )}
+            </button>
+
+            <div className="flex items-center gap-3">
+              <div className="flex-1 h-px bg-gray-200" />
+              <span className="text-xs text-gray-400">YA</span>
+              <div className="flex-1 h-px bg-gray-200" />
             </div>
-            {error && <p className="text-red-600 text-xs mt-2">{error}</p>}
+
+            <div>
+              <label className="text-sm font-semibold text-gray-700 mb-2 block">District</label>
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  className="flex-1 border-2 border-gray-100 rounded-2xl p-3 bg-gray-50 focus:border-green-400 focus:outline-none"
+                  placeholder="e.g. Ahmednagar"
+                  value={district}
+                  onChange={(e) => setDistrict(e.target.value)}
+                />
+                <button
+                  onClick={fetchRiskByDistrict}
+                  disabled={loading}
+                  className="bg-green-600 text-white rounded-2xl px-5 font-semibold disabled:opacity-60"
+                >
+                  {loading ? "..." : "Check"}
+                </button>
+              </div>
+            </div>
+            {error && <p className="text-red-600 text-xs">{error}</p>}
           </div>
 
           {data && (
@@ -125,4 +179,4 @@ export default function RiskPage() {
       )}
     </main>
   );
-} 
+}
