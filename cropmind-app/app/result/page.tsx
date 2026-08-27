@@ -1,5 +1,5 @@
 "use client";
-
+import { useState } from "react"; 
 import { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getAdviceByIndex } from "../../lib/adviceLookup";
@@ -51,6 +51,8 @@ function InfoRow({ icon, title, text }: { icon: string; title: string; text: str
 }
 
 function ResultContent() {
+
+
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -61,6 +63,22 @@ function ResultContent() {
 
   const hasImageResult = predictedIndex >= 0;
   const advice = hasImageResult ? getAdviceByIndex(predictedIndex, lang) : null;
+const submitFeedback = async (worked: boolean) => {
+  setFeedback(worked ? "worked" : "failed");
+  const { collection, addDoc, Timestamp } = await import("firebase/firestore");
+  const { db } = await import("../../firebase");
+  addDoc(collection(db, "treatment_feedback"), {
+    disease: advice?.disease || "unknown",
+    crop: advice?.crop || "unknown",
+    district: district || "Unknown",
+    worked,
+    timestamp: Timestamp.now(),
+  }).catch(() => {});
+};  
+
+  const [feedback, setFeedback] = useState<"none" | "worked" | "failed">("none");
+
+
   
 useEffect(() => {
   if (
@@ -70,15 +88,23 @@ useEffect(() => {
     !advice.severity.toLowerCase().includes("none") &&
     !advice.severity.toLowerCase().includes("नाही") &&
     !advice.severity.toLowerCase().includes("कोई नहीं")
-  ) {
-    addDoc(collection(db, "outbreak_reports"), {
-      cropKey: advice.key,
-      cropName: advice.crop,
-      disease: advice.disease,
-      district: district || "Unknown",
-      severity: advice.severity,
-      timestamp: Timestamp.now(),
-    }).catch(() => {});
+  )
+  
+
+  {
+addDoc(collection(db, "outbreak_reports"), {
+  cropKey: advice.key,
+  cropName: advice.crop,
+  disease: advice.disease,
+  district: district || "Unknown",
+  severity: advice.severity,
+  farmerNote: question || "",
+  language: lang,
+  timestamp: Timestamp.now(),
+}).catch(() => {}); 
+
+
+
   }
   // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [hasImageResult]); 
@@ -169,6 +195,65 @@ useEffect(() => {
             </p>
           </div>
         )}
+{hasImageResult && advice && (
+  <div className="border-t border-gray-100 pt-4">
+    {feedback === "none" ? (
+      <>
+        <p className="text-sm font-semibold text-gray-700 mb-2">
+          Kya ye salah kaam aayi?
+        </p>
+        <div className="flex gap-3">
+          <button
+            onClick={() => submitFeedback(true)}
+            className="flex-1 bg-green-50 text-green-700 rounded-2xl p-3 font-semibold text-sm"
+          >
+            👍 Haan, kaam aayi
+          </button>
+          <button
+            onClick={() => submitFeedback(false)}
+            className="flex-1 bg-red-50 text-red-700 rounded-2xl p-3 font-semibold text-sm"
+          >
+            👎 Nahi hui
+          </button>
+        </div>
+      </>
+    ) : feedback === "worked" ? (
+      <p className="text-sm text-green-700 bg-green-50 rounded-2xl p-3 text-center">
+        Accha laga sunke! 🙏 Feedback ke liye dhanyawad.
+      </p>
+    ) : (
+      <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-4 space-y-3">
+        <p className="text-sm font-semibold text-gray-800">
+          Chinta mat karo — expert se seedha baat karo:
+        </p>
+        <a
+          href="tel:18001801551"
+          className="flex items-center justify-center gap-2 bg-white rounded-xl p-3 text-sm font-semibold text-gray-800 shadow-sm"
+        >
+          📞 Kisan Call Centre — 1800-180-1551 (Free)
+        </a>
+        <a
+          href="https://mkisan.gov.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 bg-white rounded-xl p-3 text-sm font-semibold text-gray-800 shadow-sm"
+        >
+          🌐 mKisan Portal
+        </a>
+        <a
+          href="https://kvk.icar.gov.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 bg-white rounded-xl p-3 text-sm font-semibold text-gray-800 shadow-sm"
+        >
+          🏢 Nearest KVK Dhundo (ICAR)
+        </a>
+      </div>
+    )}
+  </div>
+)} 
+
+
 
         <button
           onClick={() => router.push("/")}

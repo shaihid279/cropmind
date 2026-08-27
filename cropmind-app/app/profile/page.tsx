@@ -77,6 +77,11 @@ export default function ProfilePage() {
         <p className="text-sm text-gray-500 mb-8">{user.email}</p>
 
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl shadow-green-100 border border-white w-full max-w-sm divide-y divide-gray-100 overflow-hidden">
+          <ProfileLink icon="✏️" label="Edit Profile" href="/profile/edit" />
+<ProfileLink icon="👥" label="Farmer Community" href="/community" />
+<ProfileLink icon="💬" label="Messages" href="/chat" />
+<ProfileLink icon="📊" label="Crop Trends" href="/trends" /> 
+
           <ProfileLink icon="🌱" label="My Crops" href="/my-crops" />
           <ProfileLink icon="🛒" label="Shop Supplies" href="/shop" />
           <ProfileLink icon="⚙️" label="Settings" href="/settings" />
