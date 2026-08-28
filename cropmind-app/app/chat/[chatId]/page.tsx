@@ -28,7 +28,7 @@ export default function ChatPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const chatId = params.chatId as string;
-  const otherUid = searchParams.get("with");
+  const otherUidFromUrl = searchParams.get("with");
 
   const [uid, setUid] = useState<string | null>(null);
   const [otherName, setOtherName] = useState("Farmer");
@@ -48,19 +48,29 @@ export default function ChatPage() {
       const chatRef = doc(db, "chats", chatId);
       const chatSnap = await getDoc(chatRef);
 
-      if (!chatSnap.exists() && otherUid) {
-        const otherProfile = await getDoc(doc(db, "farmer_profiles", otherUid));
+      if (!chatSnap.exists() && otherUidFromUrl) {
+        const otherProfile = await getDoc(doc(db, "farmer_profiles", otherUidFromUrl));
         const myProfile = await getDoc(doc(db, "farmer_profiles", uid));
+
+        const otherDisplayName = (otherProfile.data() as any)?.displayName || "Farmer";
+        const myDisplayName = (myProfile.data() as any)?.displayName || "Farmer";
+
         await setDoc(chatRef, {
-          participants: [uid, otherUid],
+          participants: [uid, otherUidFromUrl],
+          participantNames: {
+            [uid]: myDisplayName,
+            [otherUidFromUrl]: otherDisplayName,
+          },
           lastMessage: "",
-          otherName: (otherProfile.data() as any)?.displayName || "Farmer",
           createdAt: Timestamp.now(),
         });
-        setOtherName((otherProfile.data() as any)?.displayName || "Farmer");
+        setOtherName(otherDisplayName);
       } else if (chatSnap.exists()) {
         const data = chatSnap.data() as any;
-        setOtherName(data.otherName || "Farmer");
+        const participants: string[] = data.participants || [];
+        const otherUid = participants.find((p) => p !== uid);
+        const names = data.participantNames || {};
+        setOtherName((otherUid && names[otherUid]) || "Farmer");
       }
     };
     initChat();
@@ -70,7 +80,7 @@ export default function ChatPage() {
       setMessages(snap.docs.map((d) => ({ id: d.id, ...d.data() })) as Msg[]);
     });
     return () => unsub();
-  }, [uid, chatId, otherUid]);
+  }, [uid, chatId, otherUidFromUrl]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });

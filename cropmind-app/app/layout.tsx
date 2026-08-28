@@ -5,7 +5,7 @@ import BottomNav from "../components/BottomNav";
 import { ToastProvider } from "../components/Toast";
 import { LanguageProvider } from "../components/LanguageContext";
 import OnboardingGate from "../components/OnboardingGate";
-
+import ProfileSync from "../components/profileSync";
 export const metadata: Metadata = {
   title: "KisanScan",
   description: "AI-powered crop advisory for farmers",
@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-50">
+        <ProfileSync />
         <LanguageProvider>
           <ToastProvider>
             <OnboardingGate>
