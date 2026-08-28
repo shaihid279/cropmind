@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { onAuthStateChanged } from "firebase/auth";
 import { doc, setDoc, getDoc } from "firebase/firestore";
 import { auth, db } from "../../../firebase";
+import { uploadImageToCloudinary } from "../../../lib/uploadImage";
 import { useToast } from "../../../components/Toast";
 
 export default function EditProfilePage() {
@@ -14,6 +15,8 @@ export default function EditProfilePage() {
   const [displayName, setDisplayName] = useState("");
   const [bio, setBio] = useState("");
   const [saving, setSaving] = useState(false);
+  const [photoURL, setPhotoURL] = useState("");
+const [photoFile, setPhotoFile] = useState<File | null>(null);
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (u) => {
@@ -29,6 +32,11 @@ export default function EditProfilePage() {
 
   const handleSave = async () => {
     if (!uid) return;
+let finalPhotoURL = photoURL;
+if (photoFile) {
+  finalPhotoURL = await uploadImageToCloudinary(photoFile);
+}
+
     setSaving(true);
     await setDoc(doc(db, "farmer_profiles", uid), { displayName, bio }, { merge: true });
     setSaving(false);

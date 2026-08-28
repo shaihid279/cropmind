@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { doc, onSnapshot, updateDoc, arrayUnion, increment } from "firebase/firestore";
 import { db } from "../../../firebase";
 import { useToast } from "../../../components/Toast";
-
+import { uploadImageToCloudinary } from "../../../lib/uploadImage";
 interface Activity {
   id: string;
   date: string;
@@ -45,6 +45,7 @@ export default function CropDetailPage() {
   const [actNote, setActNote] = useState("");
   const [actCost, setActCost] = useState("");
   const [revenueAmount, setRevenueAmount] = useState("");
+  const [actPhoto, setActPhoto] = useState<File | null>(null);
 
   useEffect(() => {
     if (!cropId) return;
@@ -53,15 +54,25 @@ export default function CropDetailPage() {
     });
     return () => unsub();
   }, [cropId]);
-
+ 
+  
   const handleAddActivity = async () => {
     if (!actDate || !actNote.trim()) {
       showToast("Date aur note dono zaroori hain", "error");
       return;
-    }
+    } let photoUrl = "";
+    if (actPhoto) {
+  photoUrl = await uploadImageToCloudinary(actPhoto);
+}
     const cost = parseFloat(actCost) || 0;
     await updateDoc(doc(db, "crops", cropId), {
-      activities: arrayUnion({ id: Date.now().toString(), date: actDate, type: actType, note: actNote, cost }),
+      activities: arrayUnion({
+  id: Date.now().toString(),
+  date: actDate,
+  type: actType,
+  note: actNote,
+  photoUrl: photoUrl,
+}),
       totalCost: increment(cost),
     });
     setActDate("");
