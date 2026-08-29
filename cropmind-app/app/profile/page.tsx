@@ -9,12 +9,22 @@ import {
   updateProfile,
   User,
 } from "firebase/auth";
-import { auth } from "../../firebase";
+import { doc, onSnapshot } from "firebase/firestore";
+import { auth, db } from "../../firebase";
 import { useToast } from "../../components/Toast";
+import { useLanguage } from "../../components/LanguageContext";
+
+interface FarmerData {
+  displayName: string;
+  bio: string;
+  photoURL: string;
+}
 
 export default function ProfilePage() {
   const showToast = useToast();
+  const { t } = useLanguage();
   const [user, setUser] = useState<User | null>(null);
+  const [farmerData, setFarmerData] = useState<FarmerData | null>(null);
   const [checking, setChecking] = useState(true);
 
   const [isSignup, setIsSignup] = useState(false);
@@ -31,6 +41,14 @@ export default function ProfilePage() {
     });
     return () => unsub();
   }, []);
+
+  useEffect(() => {
+    if (!user) return;
+    const unsub = onSnapshot(doc(db, "farmer_profiles", user.uid), (snap) => {
+      if (snap.exists()) setFarmerData(snap.data() as FarmerData);
+    });
+    return () => unsub();
+  }, [user]);
 
   const handleAuth = async () => {
     setError("");
@@ -68,21 +86,31 @@ export default function ProfilePage() {
   }
 
   if (user) {
+    const displayName = farmerData?.displayName || user.displayName || "Farmer";
+    const photoURL = farmerData?.photoURL || "";
+
     return (
       <main className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-lime-50 flex flex-col items-center p-6 pt-16">
-        <div className="w-24 h-24 rounded-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white text-3xl font-bold shadow-lg shadow-green-200 mb-4">
-          {(user.displayName || user.email || "U")[0].toUpperCase()}
-        </div>
-        <h1 className="text-xl font-bold text-gray-800">{user.displayName || "Farmer"}</h1>
+        {photoURL ? (
+          <img
+            src={photoURL}
+            alt={displayName}
+            className="w-24 h-24 rounded-full object-cover shadow-lg shadow-green-200 mb-4"
+          />
+        ) : (
+          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white text-3xl font-bold shadow-lg shadow-green-200 mb-4">
+            {displayName[0]?.toUpperCase()}
+          </div>
+        )}
+        <h1 className="text-xl font-bold text-gray-800">{displayName}</h1>
         <p className="text-sm text-gray-500 mb-8">{user.email}</p>
 
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl shadow-green-100 border border-white w-full max-w-sm divide-y divide-gray-100 overflow-hidden">
           <ProfileLink icon="✏️" label="Edit Profile" href="/profile/edit" />
-<ProfileLink icon="👥" label="Farmer Community" href="/community" />
-<ProfileLink icon="💬" label="Messages" href="/chat" />
-<ProfileLink icon="📊" label="Crop Trends" href="/trends" /> 
-
-          <ProfileLink icon="🌱" label="My Crops" href="/my-crops" />
+          <ProfileLink icon="👥" label="Farmer Community" href="/community" />
+          <ProfileLink icon="💬" label="Messages" href="/chat" />
+          <ProfileLink icon="📊" label="Crop Trends" href="/trends" />
+          <ProfileLink icon="🌱" label={t("navMyCrops")} href="/my-crops" />
           <ProfileLink icon="🛒" label="Shop Supplies" href="/shop" />
           <ProfileLink icon="⚙️" label="Settings" href="/settings" />
           <ProfileLink icon="❓" label="Help & Support" href="/help" />
@@ -175,5 +203,5 @@ function ProfileLink({ icon, label, href }: { icon: string; label: string; href:
       <span className="text-gray-700 font-medium flex-1">{label}</span>
       <span className="text-gray-300">›</span>
     </a>
-  ); 
+  );
 } 

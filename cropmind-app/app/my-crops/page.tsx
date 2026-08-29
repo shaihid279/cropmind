@@ -6,6 +6,7 @@ import { onAuthStateChanged, User } from "firebase/auth";
 import { collection, addDoc, query, where, onSnapshot, Timestamp } from "firebase/firestore";
 import { auth, db } from "../../firebase";
 import { useToast } from "../../components/Toast";
+import { doc, deleteDoc } from "firebase/firestore";
 
 interface CropEntry {
   id: string;
@@ -51,6 +52,8 @@ export default function MyCropsPage() {
       showToast("Crop naam aur date dono zaroori hain", "error");
       return;
     }
+
+    
     await addDoc(collection(db, "crops"), {
       userId: user!.uid,
       cropName: newCropName,
@@ -65,7 +68,13 @@ export default function MyCropsPage() {
     setShowAddForm(false);
     showToast(`${newCropName} track karna shuru ho gaya! 🌱`);
   };
-
+const handleDeleteCrop = async (e: React.MouseEvent, cropId: string, cropName: string) => {
+  e.stopPropagation();
+  if (confirm(`${cropName} delete karna hai? Wapas nahi aayega.`)) {
+    await deleteDoc(doc(db, "crops", cropId));
+    showToast("Crop delete ho gaya");
+  }
+};
   if (checking) {
     return (
       <main className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-lime-50 flex items-center justify-center">
@@ -150,23 +159,32 @@ export default function MyCropsPage() {
             const profit = (crop.revenue || 0) - (crop.totalCost || 0);
             return (
               <div
-                key={crop.id}
-                onClick={() => router.push(`/my-crops/${crop.id}`)}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-md shadow-green-100 border border-white p-5 cursor-pointer hover:shadow-lg transition-all"
-              >
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h3 className="font-bold text-gray-800">{crop.cropName}</h3>
-                    <p className="text-xs text-gray-500">Sown: {crop.sownDate}</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-xs text-gray-400">Profit</p>
-                    <p className={`font-bold ${profit >= 0 ? "text-green-600" : "text-red-600"}`}>
-                      ₹{profit}
-                    </p>
-                  </div>
-                </div>
-              </div>
+  key={crop.id}
+  onClick={() => router.push(`/my-crops/${crop.id}`)}
+  className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-md shadow-green-100 border border-white p-5 cursor-pointer hover:shadow-lg transition-all"
+>
+  <div className="flex items-center justify-between">
+    <div>
+      <h3 className="font-bold text-gray-800">{crop.cropName}</h3>
+      <p className="text-xs text-gray-500">Sown: {crop.sownDate}</p>
+    </div>
+    <div className="flex items-center gap-3">
+      <div className="text-right">
+        <p className="text-xs text-gray-400">Profit</p>
+        <p className={`font-bold ${profit >= 0 ? "text-green-600" : "text-red-600"}`}>
+          ₹{profit}
+        </p>
+      </div>
+      <button
+        onClick={(e) => handleDeleteCrop(e, crop.id, crop.cropName)}
+        className="text-red-400 text-lg p-1"
+      >
+        🗑️
+      </button>
+    </div>
+  </div>
+</div>
+
             );
           })}
         </div>
