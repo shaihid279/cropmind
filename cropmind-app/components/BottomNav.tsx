@@ -1,18 +1,20 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-
-const tabs = [
-  { path: "/", icon: "🏠", label: "Home" },
-  { path: "/my-crops", icon: "🌱", label: "My Crops" },
-  { path: "/input", icon: "📷", label: "Scan" },
-  { path: "/assistant", icon: "💬", label: "AI Chat" },
-  { path: "/profile", icon: "👤", label: "Profile" },
-]; 
+import { useLanguage } from "./LanguageContext";
 
 export default function BottomNav() {
   const pathname = usePathname();
-  const router = useRouter(); 
+  const router = useRouter();
+  const { t } = useLanguage();
+
+  const tabs = [
+    { path: "/", icon: "🏠", label: t("navHome") },
+    { path: "/my-crops", icon: "🌱", label: t("navMyCrops") },
+    { path: "/input", icon: "📷", label: t("navScan") },
+    { path: "/assistant", icon: "💬", label: t("navChat") },
+    { path: "/profile", icon: "👤", label: t("navProfile") },
+  ];
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] z-50">
