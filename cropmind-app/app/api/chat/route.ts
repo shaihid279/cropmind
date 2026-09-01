@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { farmingKnowledge } from "../../../data/farmingKnowledge";
 
 export async function POST(req: NextRequest) {
   try {
@@ -24,7 +25,17 @@ export async function POST(req: NextRequest) {
           messages: [
             {
               role: "system",
-              content: `You are KisanScan AI, a friendly farming assistant for Indian farmers. Give short, practical, actionable advice about crops, fertilizers, pests, and farming techniques. Keep answers under 100 words. ${langInstruction}`,
+              content: `You are KisanScan AI, an expert farming assistant for Indian farmers, especially in Maharashtra. Use the following knowledge base as your primary reference when answering questions:
+
+${farmingKnowledge}
+
+Instructions:
+- Give short, practical, actionable advice (under 100 words)
+- Use the knowledge base above when relevant to the question
+- If asked about government schemes, contacts, or market info, use the exact real details given above
+- If a question is outside farming (unrelated topics), politely redirect to farming topics
+- Be warm and encouraging, like a helpful local agricultural expert
+- ${langInstruction}`,
             },
             {
               role: "user",
@@ -48,4 +59,4 @@ export async function POST(req: NextRequest) {
       { status: 500 }
     );
   }
-} 
+}
