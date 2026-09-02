@@ -65,10 +65,9 @@ function InputContent() {
   const runModelOnImage = async (file: File): Promise<number> => {
     // @ts-ignore
     const tflite = window.tflite;
-    // @ts-ignore
+    // @ts-ignore 
     const tf = window.tf;  
-    tflite.setWasmPath('https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.11/dist/'); 
-
+    tflite.setWasmPath('https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.10/dist/');
     const model = await tflite.loadTFLiteModel("/model/cropmind_model.tflite");
 
     const imgElement = document.createElement("img");

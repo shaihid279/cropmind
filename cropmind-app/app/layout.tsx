@@ -29,7 +29,7 @@ export default function RootLayout({
           </ToastProvider>
         </LanguageProvider>
         <Script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js" strategy="beforeInteractive" />
-        <Script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.11/dist/tf-tflite.min.js" strategy="beforeInteractive" />
+        <Script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.10/dist/tf-tflite.min.js" strategy="beforeInteractive" /> 
       </body>
     </html>
   );
