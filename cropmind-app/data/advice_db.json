@@ -1,152 +1,11 @@
 {
-  "Corn___Common_rust": {
-    "crop": {
-      "english": "Corn (Maize)",
-      "marathi": "मका",
-      "hindi": "मक्का"
-    },
-    "disease": {
-      "english": "Common Rust",
-      "marathi": "सामान्य गंज रोग",
-      "hindi": "सामान्य रस्ट रोग"
-    },
-    "severity": {
-      "english": "Medium",
-      "marathi": "मध्यम",
-      "hindi": "मध्यम"
-    },
-    "symptoms": {
-      "english": "Small powdery brick-red pustules on leaves. Leaves turn yellow and dry out.",
-      "marathi": "पानांवर लहान, विटकरी-लाल रंगाचे पावडरसारखे डाग. पाने पिवळी पडून वाळतात.",
-      "hindi": "पत्तियों पर छोटे, ईंट-लाल रंग के पाउडरी दाने। पत्तियां पीली पड़कर सूख जाती हैं।"
-    },
-    "treatment": {
-      "english": "Spray Mancozeb 75WP at 2.5g per litre of water. Repeat after 10 days.",
-      "marathi": "मॅन्कोझेब 75WP 2.5 ग्रॅम प्रति लिटर पाण्यात मिसळून फवारा. 10 दिवसांनी पुन्हा फवारा.",
-      "hindi": "मैंकोजेब 75WP 2.5 ग्राम प्रति लीटर पानी में घोलकर छिड़काव करें। 10 दिन बाद दोबारा करें।"
-    },
-    "prevention": {
-      "english": "Use rust-resistant varieties. Avoid overhead irrigation. Ensure proper spacing.",
-      "marathi": "गंजरोग-प्रतिरोधक वाण वापरा. वरून पाणी देणे टाळा. योग्य अंतर ठेवा.",
-      "hindi": "रस्ट-प्रतिरोधी किस्में उगाएं। ऊपर से सिंचाई न करें। उचित दूरी बनाए रखें।"
-    },
-    "sowing": {
-      "english": "Sow June to July after first good monsoon rain. Seed rate 20-25 kg/hectare. Row spacing 60x20 cm.",
-      "marathi": "जून ते जुलै दरम्यान पहिल्या चांगल्या पावसानंतर पेरणी करा. बियाणे दर 20-25 किलो/हेक्टर. ओळींमधील अंतर 60x20 सेमी.",
-      "hindi": "पहली अच्छी मानसून बारिश के बाद जून से जुलाई में बुवाई करें। बीज दर 20-25 किग्रा/हेक्टेयर। कतार की दूरी 60x20 सेमी।"
-    },
-    "irrigation": {
-      "english": "Critical stages: knee-high stage, tasseling, and grain filling. Total 400-500mm per season. Avoid waterlogging.",
-      "marathi": "महत्त्वाचे टप्पे: गुडघ्याएवढी उंची, तुरे येणे आणि दाणे भरणे. हंगामात एकूण 400-500 मिमी पाणी. साचलेले पाणी टाळा.",
-      "hindi": "महत्वपूर्ण अवस्थाएं: घुटने की ऊंचाई, टेसलिंग और दाना भरना। प्रति सीजन कुल 400-500 मिमी। जलभराव से बचें।"
-    },
-    "fertilizer": {
-      "english": "Basal: DAP 100kg/ha at sowing. Top dress Urea 60kg/ha at knee-high stage. Potash 40kg/ha at sowing.",
-      "marathi": "पेरणीच्या वेळी DAP 100 किलो/हेक्टर. गुडघ्याएवढ्या उंचीवर युरिया 60 किलो/हेक्टर. पेरणीच्या वेळी पोटॅश 40 किलो/हेक्टर.",
-      "hindi": "बुवाई के समय DAP 100 किग्रा/हेक्टेयर। घुटने की ऊंचाई पर यूरिया 60 किग्रा/हेक्टेयर। बुवाई पर पोटाश 40 किग्रा/हेक्टेयर।"
-    }
-  },
-  "Corn___Northern_Leaf_Blight": {
-    "crop": {
-      "english": "Corn (Maize)",
-      "marathi": "मका",
-      "hindi": "मक्का"
-    },
-    "disease": {
-      "english": "Northern Leaf Blight",
-      "marathi": "उत्तरी पर्णकरपा",
-      "hindi": "उत्तरी पत्ती झुलसा"
-    },
-    "severity": {
-      "english": "High",
-      "marathi": "जास्त",
-      "hindi": "अधिक"
-    },
-    "symptoms": {
-      "english": "Long cigar-shaped grey-green lesions on leaves. Lesions turn tan or brown as disease advances.",
-      "marathi": "पानांवर लांब, सिगारच्या आकाराचे राखाडी-हिरवे डाग. रोग वाढल्यावर डाग तपकिरी होतात.",
-      "hindi": "पत्तियों पर लंबे सिगार के आकार के धूसर-हरे धब्बे। रोग बढ़ने पर धब्बे भूरे हो जाते हैं।"
-    },
-    "treatment": {
-      "english": "Spray Propiconazole 25EC at 1ml per litre. Apply at first sign of disease. Repeat after 14 days.",
-      "marathi": "प्रोपिकोनॅझोल 25EC 1 मिली प्रति लिटर पाण्यात मिसळून फवारा. रोगाच्या पहिल्या लक्षणावर फवारा. 14 दिवसांनी पुन्हा करा.",
-      "hindi": "प्रोपिकोनाजोल 25EC 1 मिली प्रति लीटर पानी में मिलाकर छिड़काव करें। रोग के पहले लक्षण पर करें। 14 दिन बाद दोहराएं।"
-    },
-    "prevention": {
-      "english": "Crop rotation with non-host crops. Plant resistant hybrids. Remove infected crop debris after harvest.",
-      "marathi": "इतर पिकांसोबत पीक फेरपालट करा. प्रतिरोधक संकरित वाण लावा. काढणीनंतर संक्रमित पिकाचे अवशेष काढा.",
-      "hindi": "गैर-मेजबान फसलों के साथ फसल चक्र अपनाएं। प्रतिरोधी संकर किस्में लगाएं। कटाई के बाद संक्रमित अवशेष हटाएं।"
-    },
-    "sowing": {
-      "english": "Sow June to July after first good monsoon rain. Seed rate 20-25 kg/hectare. Row spacing 60x20 cm.",
-      "marathi": "जून ते जुलाई दरम्यान पहिल्या चांगल्या पावसानंतर पेरणी करा. बियाणे दर 20-25 किलो/हेक्टर.",
-      "hindi": "जून से जुलाई में पहली अच्छी बारिश के बाद बुवाई करें। बीज दर 20-25 किग्रा/हेक्टेयर।"
-    },
-    "irrigation": {
-      "english": "Water at knee-high stage, tasseling and grain filling. Avoid overhead irrigation to reduce disease spread.",
-      "marathi": "गुडघ्याएवढी उंची, तुरे येणे आणि दाणे भरण्याच्या वेळी पाणी द्या. रोगाचा प्रसार कमी करण्यासाठी वरून पाणी टाळा.",
-      "hindi": "घुटने की ऊंचाई, टेसलिंग और दाना भरने पर सिंचाई करें। रोग फैलाव कम करने के लिए ऊपर से सिंचाई न करें।"
-    },
-    "fertilizer": {
-      "english": "Basal: DAP 100kg/ha. Top dress Urea 60kg/ha at knee-high stage. Avoid excess nitrogen as it increases blight risk.",
-      "marathi": "DAP 100 किलो/हेक्टर बेसल. गुडघ्याएवढ्या उंचीवर युरिया 60 किलो/हेक्टर. जास्त नत्र टाळा कारण करपा वाढतो.",
-      "hindi": "DAP 100 किग्रा/हेक्टेयर बेसल। घुटने की ऊंचाई पर यूरिया 60 किग्रा/हेक्टेयर। अत्यधिक नाइट्रोजन से बचें।"
-    }
-  },
-  "Corn___healthy": {
-    "crop": {
-      "english": "Corn (Maize)",
-      "marathi": "मका",
-      "hindi": "मक्का"
-    },
-    "disease": {
-      "english": "Healthy",
-      "marathi": "निरोगी",
-      "hindi": "स्वस्थ"
-    },
-    "severity": {
-      "english": "None",
-      "marathi": "नाही",
-      "hindi": "कोई नहीं"
-    },
-    "symptoms": {
-      "english": "No disease detected. Your crop looks healthy!",
-      "marathi": "कोणताही रोग आढळला नाही. तुमचे पीक निरोगी दिसते!",
-      "hindi": "कोई रोग नहीं मिला। आपकी फसल स्वस्थ दिखती है!"
-    },
-    "treatment": {
-      "english": "No treatment needed. Continue regular care and monitoring.",
-      "marathi": "कोणत्याही उपचाराची गरज नाही. नियमित काळजी आणि देखरेख सुरू ठेवा.",
-      "hindi": "कोई उपचार आवश्यक नहीं। नियमित देखभाल और निगरानी जारी रखें।"
-    },
-    "prevention": {
-      "english": "Monitor weekly for rust and blight. Check undersides of leaves. Remove weeds regularly.",
-      "marathi": "गंज आणि करपा यांसाठी आठवड्यातून तपासा. पानांच्या खालील बाजू तपासा. तण नियमित काढा.",
-      "hindi": "रस्ट और झुलसा के लिए साप्ताहिक जांचें। पत्तियों की निचली सतह देखें। नियमित रूप से खरपतवार हटाएं।"
-    },
-    "sowing": {
-      "english": "Best sowing time: June 15 to July 15. Seed rate 20-25 kg/hectare. Depth 4-5 cm. Row spacing 60x20 cm.",
-      "marathi": "सर्वोत्तम पेरणी वेळ: 15 जून ते 15 जुलै. बियाणे दर 20-25 किलो/हेक्टर. खोली 4-5 सेमी. ओळ अंतर 60x20 सेमी.",
-      "hindi": "सर्वोत्तम बुवाई समय: 15 जून से 15 जुलाई। बीज दर 20-25 किग्रा/हेक्टेयर। गहराई 4-5 सेमी। कतार दूरी 60x20 सेमी।"
-    },
-    "irrigation": {
-      "english": "Water every 10-12 days. Critical at knee-high (30 days), tasseling (50 days), grain filling (70 days). Total 5-6 irrigations per season.",
-      "marathi": "दर 10-12 दिवसांनी पाणी द्या. गुडघ्याएवढी उंची (30 दिवस), तुरे (50 दिवस), दाणे भरणे (70 दिवस) या वेळी पाणी महत्त्वाचे. हंगामात एकूण 5-6 पाण्या.",
-      "hindi": "हर 10-12 दिन पर सिंचाई करें। घुटने की ऊंचाई (30 दिन), टेसलिंग (50 दिन), दाना भरना (70 दिन) पर पानी जरूरी। प्रति सीजन कुल 5-6 सिंचाई।"
-    },
-    "fertilizer": {
-      "english": "At sowing: DAP 100kg/ha + Potash 40kg/ha. At 30 days: Urea 60kg/ha. At 50 days: Urea 30kg/ha.",
-      "marathi": "पेरणीच्या वेळी: DAP 100 किलो/हेक्टर + पोटॅश 40 किलो/हेक्टर. 30 दिवसांनी: युरिया 60 किलो/हेक्टर. 50 दिवसांनी: युरिया 30 किलो/हेक्टर.",
-      "hindi": "बुवाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 40 किग्रा/हेक्टेयर। 30 दिन पर: यूरिया 60 किग्रा/हेक्टेयर। 50 दिन पर: यूरिया 30 किग्रा/हेक्टेयर।"
-    }
-  },
   "Potato___Early_blight": {
     "crop": {
       "english": "Potato",
       "marathi": "बटाटा",
       "hindi": "आलू"
     },
-    "disease": {
+    "disease": { 
       "english": "Early Blight",
       "marathi": "अर्ली ब्लाइट (आगाट करपा)",
       "hindi": "अर्ली ब्लाइट (अगेती झुलसा)"
@@ -162,9 +21,9 @@
       "hindi": "पुरानी पत्तियों पर लक्ष्य बोर्ड जैसे गहरे भूरे धब्बे। पत्तियां पीली पड़कर जल्दी गिर जाती हैं।"
     },
     "treatment": {
-      "english": "Spray Chlorothalonil 75WP at 2g per litre. Apply every 7-10 days. Remove and destroy infected leaves.",
-      "marathi": "क्लोरोथॅलोनिल 75WP 2 ग्रॅम प्रति लिटर पाण्यात फवारा. दर 7-10 दिवसांनी फवारा. संक्रमित पाने काढून नष्ट करा.",
-      "hindi": "क्लोरोथैलोनिल 75WP 2 ग्राम प्रति लीटर पानी में छिड़काव करें। हर 7-10 दिन पर करें। संक्रमित पत्तियां हटाकर नष्ट करें।"
+      "english": "Spray Mancozeb 75WP at 2g per litre of water. Repeat every 7-10 days. Remove and destroy infected leaves.",
+      "marathi": "मॅन्कोझेब 75WP 2 ग्रॅम प्रति लिटर पाण्यात फवारा. दर 7-10 दिवसांनी पुन्हा करा. संक्रमित पाने काढून नष्ट करा.",
+      "hindi": "मैंकोजेब 75WP 2 ग्राम प्रति लीटर पानी में छिड़काव करें। हर 7-10 दिन दोहराएं। संक्रमित पत्तियां हटाकर नष्ट करें।"
     },
     "prevention": {
       "english": "Use certified disease-free seed. Improve field drainage. Mulch soil to reduce splash spread.",
@@ -199,9 +58,9 @@
       "hindi": "पछेती झुलसा (लेट ब्लाइट)"
     },
     "severity": {
-      "english": "VERY HIGH — Act immediately!",
-      "marathi": "अत्यंत धोकादायक — तातडीने उपाय करा!",
-      "hindi": "बहुत अधिक खतरनाक — तुरंत कार्रवाई करें!"
+      "english": "Very High - Act immediately",
+      "marathi": "अत्यंत धोकादायक - तातडीने उपाय करा",
+      "hindi": "बहुत अधिक खतरनाक - तुरंत कार्रवाई करें"
     },
     "symptoms": {
       "english": "Water-soaked dark lesions on leaves and stems. White mold visible under leaves in humid conditions. Tubers show brown rot inside.",
@@ -209,7 +68,7 @@
       "hindi": "पत्तियों और तनों पर पानी से भीगे जैसे गहरे धब्बे। आर्द्र मौसम में पत्तियों के नीचे सफेद फफूंद दिखती है। कंद के अंदर भूरा सड़न।"
     },
     "treatment": {
-      "english": "URGENT: Spray Metalaxyl+Mancozeb (Ridomil Gold) at 2.5g per litre immediately. Repeat every 7 days. Remove badly infected plants.",
+      "english": "Urgent: Spray Metalaxyl+Mancozeb (Ridomil Gold) at 2.5g per litre immediately. Repeat every 7 days. Remove badly infected plants.",
       "marathi": "तातडीने: मेटॅलॅक्झिल+मॅन्कोझेब (रिडोमिल गोल्ड) 2.5 ग्रॅम प्रति लिटर पाण्यात फवारा. दर 7 दिवसांनी पुन्हा करा. जास्त संक्रमित झाडे काढा.",
       "hindi": "तुरंत: मेटालैक्सिल+मैंकोजेब (रिडोमिल गोल्ड) 2.5 ग्राम प्रति लीटर पानी में छिड़काव करें। हर 7 दिन पर दोहराएं। अधिक संक्रमित पौधे हटाएं।"
     },
@@ -219,19 +78,19 @@
       "hindi": "केवल प्रमाणित रोगमुक्त बीज लगाएं। ऊपर से सिंचाई न करें। वायु प्रवाह के लिए पौधों की दूरी बढ़ाएं। बरसात में रोज निगरानी करें।"
     },
     "sowing": {
-      "english": "Plant October to November. Avoid planting in areas with previous late blight history. Use resistant varieties like Kufri Jyoti.",
+      "english": "Plant October to November. Avoid planting in fields with previous late blight history. Use resistant varieties like Kufri Jyoti.",
       "marathi": "ऑक्टोबर ते नोव्हेंबरमध्ये लावा. ज्या शेतात आधी लेट ब्लाइट आला तेथे लावणे टाळा. कुफरी ज्योती सारख्या प्रतिरोधक वाणाचा वापर करा.",
       "hindi": "अक्टूबर से नवंबर में रोपें। जहां पहले लेट ब्लाइट आया हो वहां न लगाएं। कुफरी ज्योति जैसी प्रतिरोधी किस्म उपयोग करें।"
     },
     "irrigation": {
-      "english": "Avoid overhead irrigation completely. Use drip or furrow only. Do not irrigate in evening — wet foliage overnight encourages blight.",
-      "marathi": "वरून पाणी देणे पूर्णपणे टाळा. फक्त ठिबक किंवा सरी पद्धतीने पाणी द्या. संध्याकाळी पाणी देऊ नका — रात्री ओली पाने करपा वाढवतात.",
-      "hindi": "ऊपर से सिंचाई बिल्कुल न करें। केवल ड्रिप या नाली से सिंचाई करें। शाम को सिंचाई न करें — रात को गीली पत्तियां झुलसा बढ़ाती हैं।"
+      "english": "Avoid overhead irrigation completely. Use drip or furrow only. Do not irrigate in evening - wet foliage overnight encourages blight.",
+      "marathi": "वरून पाणी देणे पूर्णपणे टाळा. फक्त ठिबक किंवा सरी पद्धतीने पाणी द्या. संध्याकाळी पाणी देऊ नका - रात्री ओली पाने करपा वाढवतात.",
+      "hindi": "ऊपर से सिंचाई बिल्कुल न करें। केवल ड्रिप या नाली से सिंचाई करें। शाम को सिंचाई न करें - रात को गीली पत्तियां झुलसा बढ़ाती हैं।"
     },
     "fertilizer": {
-      "english": "Reduce nitrogen — excess nitrogen makes plants more susceptible. Increase potassium: Potash 120kg/ha improves disease resistance.",
-      "marathi": "नत्र कमी करा — जास्त नत्राने झाडे जास्त संवेदनशील होतात. पोटॅश वाढवा: पोटॅश 120 किलो/हेक्टर रोगप्रतिकारशक्ती वाढवते.",
-      "hindi": "नाइट्रोजन कम करें — अधिक नाइट्रोजन पौधों को अधिक संवेदनशील बनाता है। पोटाश बढ़ाएं: 120 किग्रा/हेक्टेयर पोटाश रोग प्रतिरोध बढ़ाता है।"
+      "english": "Reduce nitrogen - excess nitrogen makes plants more susceptible. Increase potassium: Potash 120kg/ha improves disease resistance.",
+      "marathi": "नत्र कमी करा - जास्त नत्राने झाडे जास्त संवेदनशील होतात. पोटॅश वाढवा: पोटॅश 120 किलो/हेक्टर रोगप्रतिकारशक्ती वाढवते.",
+      "hindi": "नाइट्रोजन कम करें - अधिक नाइट्रोजन पौधों को अधिक संवेदनशील बनाता है। पोटाश बढ़ाएं: 120 किग्रा/हेक्टेयर पोटाश रोग प्रतिरोध बढ़ाता है।"
     }
   },
   "Potato___healthy": {
@@ -251,9 +110,9 @@
       "hindi": "कोई नहीं"
     },
     "symptoms": {
-      "english": "No disease detected. Your crop looks healthy!",
-      "marathi": "कोणताही रोग आढळला नाही. तुमचे बटाट्याचे पीक निरोगी आहे!",
-      "hindi": "कोई रोग नहीं मिला। आपकी आलू की फसल स्वस्थ है!"
+      "english": "No supported disease condition was detected by the model. This does not guarantee the crop is completely free of all problems.",
+      "marathi": "मॉडेलला कोणताही ज्ञात रोग आढळला नाही. याचा अर्थ पीक पूर्णपणे समस्यामुक्त आहे असे नाही.",
+      "hindi": "मॉडल को कोई ज्ञात रोग नहीं मिला। इसका मतलब यह नहीं कि फसल पूरी तरह समस्या-मुक्त है।"
     },
     "treatment": {
       "english": "No treatment needed. Earth up soil around plants at 30 days to protect tubers.",
@@ -281,7 +140,54 @@
       "hindi": "रोपण पर: DAP 150 किग्रा/हेक्टेयर + पोटाश 100 किग्रा/हेक्टेयर + FYM 25 टन/हेक्टेयर। मिट्टी चढ़ाने पर (30 दिन): यूरिया 80 किग्रा/हेक्टेयर।"
     }
   },
-  "Tomato___Early_blight": {
+  "Tomato_Bacterial_spot": {
+    "crop": {
+      "english": "Tomato",
+      "marathi": "टोमॅटो",
+      "hindi": "टमाटर"
+    },
+    "disease": {
+      "english": "Bacterial Spot",
+      "marathi": "जिवाणूजन्य ठिपके रोग",
+      "hindi": "जीवाणु धब्बा रोग"
+    },
+    "severity": {
+      "english": "Medium to High",
+      "marathi": "मध्यम ते जास्त",
+      "hindi": "मध्यम से अधिक"
+    },
+    "symptoms": {
+      "english": "Small water-soaked greasy spots on leaves that turn dark brown to black, often with a yellow halo. Spots may merge and cause leaf browning. Fruit shows raised, scab-like brown spots.",
+      "marathi": "पानांवर लहान पाण्याने भिजल्यासारखे तेलकट डाग जे गडद तपकिरी ते काळे होतात, अनेकदा पिवळ्या वलयासह. डाग एकत्र येऊन पान तपकिरी होते. फळावर उंचावलेले, खपल्यासारखे तपकिरी डाग.",
+      "hindi": "पत्तियों पर छोटे पानी से भीगे तैलीय धब्बे जो गहरे भूरे से काले हो जाते हैं, अक्सर पीले घेरे के साथ। धब्बे मिलकर पत्ती को भूरा कर देते हैं। फल पर उभरे, पपड़ीदार भूरे धब्बे।"
+    },
+    "treatment": {
+      "english": "This is a bacterial disease, not fungal — fungicides alone will not work. Spray Copper Oxychloride 50WP at 2.5g per litre combined with Streptocycline at 1g per 10 litres of water. Repeat every 10 days. No treatment fully cures it once spread is heavy — focus on stopping further spread.",
+      "marathi": "हा जिवाणूजन्य रोग आहे, बुरशीजन्य नाही — फक्त बुरशीनाशक फवारून उपयोग नाही. कॉपर ऑक्सीक्लोराईड 50WP 2.5 ग्रॅम प्रति लिटर आणि स्ट्रेप्टोसायक्लिन 1 ग्रॅम प्रति 10 लिटर पाण्यात मिसळून फवारा. दर 10 दिवसांनी पुन्हा करा. मोठ्या प्रमाणात पसरल्यावर पूर्ण उपचार शक्य नाही — पुढील प्रसार थांबवण्यावर लक्ष द्या.",
+      "hindi": "यह जीवाणु रोग है, फफूंद जनित नहीं — केवल फफूंदनाशक से काम नहीं चलेगा। कॉपर ऑक्सीक्लोराइड 50WP 2.5 ग्राम प्रति लीटर और स्ट्रेप्टोसाइक्लिन 1 ग्राम प्रति 10 लीटर पानी में मिलाकर छिड़काव करें। हर 10 दिन दोहराएं। भारी प्रसार के बाद पूर्ण इलाज संभव नहीं — आगे फैलाव रोकने पर ध्यान दें।"
+    },
+    "prevention": {
+      "english": "Use certified disease-free seed and transplants. Avoid overhead irrigation and working in wet fields. Rotate crops for 2-3 years away from tomato and pepper. Remove and destroy crop debris after harvest.",
+      "marathi": "प्रमाणित रोगमुक्त बियाणे आणि रोपे वापरा. वरून पाणी देणे आणि ओल्या शेतात काम करणे टाळा. टोमॅटो आणि मिरचीपासून दूर 2-3 वर्षे पीक फेरपालट करा. काढणीनंतर पिकाचे अवशेष काढून नष्ट करा.",
+      "hindi": "प्रमाणित रोगमुक्त बीज और पौध का उपयोग करें। ऊपर से सिंचाई और गीले खेत में काम करने से बचें। टमाटर और मिर्च से दूर 2-3 साल फसल चक्र अपनाएं। कटाई के बाद फसल अवशेष हटाकर नष्ट करें।"
+    },
+    "sowing": {
+      "english": "Transplant seedlings at 25-30 days old. Spacing 60x45 cm. Best season: October-November and June-July in Maharashtra.",
+      "marathi": "25-30 दिवस वयाची रोपे पुनर्लावणी करा. अंतर 60x45 सेमी. महाराष्ट्रात सर्वोत्तम हंगाम: ऑक्टोबर-नोव्हेंबर आणि जून-जुलै.",
+      "hindi": "25-30 दिन की पौध की रोपाई करें। दूरी 60x45 सेमी। महाराष्ट्र में सर्वोत्तम मौसम: अक्टूबर-नवंबर और जून-जुलाई।"
+    },
+    "irrigation": {
+      "english": "Use drip irrigation only, never overhead sprinkler. Water at the base of the plant. Irrigate every 5-7 days.",
+      "marathi": "फक्त ठिबक सिंचन वापरा, वरून तुषार सिंचन कधीही नाही. झाडाच्या मुळाशी पाणी द्या. दर 5-7 दिवसांनी पाणी द्या.",
+      "hindi": "केवल ड्रिप सिंचाई उपयोग करें, ऊपर से स्प्रिंकलर कभी नहीं। पौधे के आधार पर पानी दें। हर 5-7 दिन सिंचाई करें।"
+    },
+    "fertilizer": {
+      "english": "At transplanting: DAP 100kg/ha + Potash 80kg/ha. At 30 days: Urea 50kg/ha. Avoid excess nitrogen, which makes foliage more susceptible.",
+      "marathi": "पुनर्लावणीच्या वेळी: DAP 100 किलो/हेक्टर + पोटॅश 80 किलो/हेक्टर. 30 दिवसांनी: युरिया 50 किलो/हेक्टर. जास्त नत्र टाळा, त्यामुळे पाने जास्त संवेदनशील होतात.",
+      "hindi": "रोपाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 80 किग्रा/हेक्टेयर। 30 दिन पर: यूरिया 50 किग्रा/हेक्टेयर। अधिक नाइट्रोजन से बचें, इससे पत्तियां अधिक संवेदनशील होती हैं।"
+    }
+  },
+  "Tomato_Early_blight": {
     "crop": {
       "english": "Tomato",
       "marathi": "टोमॅटो",
@@ -318,9 +224,9 @@
       "hindi": "25-30 दिन की पौध की रोपाई करें। दूरी 60x45 सेमी। महाराष्ट्र में सर्वोत्तम मौसम: अक्टूबर-नवंबर और जून-जुलाई।"
     },
     "irrigation": {
-      "english": "Irrigate every 5-7 days. Critical at flowering and fruit setting. Use drip irrigation — avoids wetting foliage. Total 600-700mm per season.",
-      "marathi": "दर 5-7 दिवसांनी पाणी द्या. फुलोरा आणि फळधारणा वेळी महत्त्वाचे. ठिबक सिंचन वापरा — पाने ओली होत नाहीत. हंगामात एकूण 600-700 मिमी.",
-      "hindi": "हर 5-7 दिन पर सिंचाई करें। फूल और फल लगने के समय जरूरी। ड्रिप सिंचाई उपयोग करें — पत्तियां नहीं भीगतीं। प्रति सीजन कुल 600-700 मिमी।"
+      "english": "Irrigate every 5-7 days. Critical at flowering and fruit setting. Use drip irrigation - avoids wetting foliage. Total 600-700mm per season.",
+      "marathi": "दर 5-7 दिवसांनी पाणी द्या. फुलोरा आणि फळधारणा वेळी महत्त्वाचे. ठिबक सिंचन वापरा - पाने ओली होत नाहीत. हंगामात एकूण 600-700 मिमी.",
+      "hindi": "हर 5-7 दिन पर सिंचाई करें। फूल और फल लगने के समय जरूरी। ड्रिप सिंचाई उपयोग करें - पत्तियां नहीं भीगतीं। प्रति सीजन कुल 600-700 मिमी।"
     },
     "fertilizer": {
       "english": "At transplanting: DAP 100kg/ha + Potash 80kg/ha. At 30 days: Urea 50kg/ha. At flowering: Potash 40kg/ha extra for fruit quality.",
@@ -328,7 +234,7 @@
       "hindi": "रोपाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 80 किग्रा/हेक्टेयर। 30 दिन पर: यूरिया 50 किग्रा/हेक्टेयर। फूल पर: फल गुणवत्ता के लिए अतिरिक्त पोटाश 40 किग्रा/हेक्टेयर।"
     }
   },
-  "Tomato___Late_blight": {
+  "Tomato_Late_blight": {
     "crop": {
       "english": "Tomato",
       "marathi": "टोमॅटो",
@@ -340,9 +246,9 @@
       "hindi": "पछेती झुलसा"
     },
     "severity": {
-      "english": "Very High — Spreads rapidly!",
-      "marathi": "अत्यंत धोकादायक — वेगाने पसरतो!",
-      "hindi": "बहुत अधिक — तेजी से फैलता है!"
+      "english": "Very High - Spreads rapidly",
+      "marathi": "अत्यंत धोकादायक - वेगाने पसरतो",
+      "hindi": "बहुत अधिक - तेजी से फैलता है"
     },
     "symptoms": {
       "english": "Greasy dark patches on leaves and stems. White mold under leaves. Fruits show brown water-soaked rot.",
@@ -365,17 +271,299 @@
       "hindi": "जहां पहले लेट ब्लाइट आया हो वहां टमाटर न लगाएं। 25-30 दिन की पौध रोपें। बेहतर वायु प्रवाह के लिए दूरी 75x45 सेमी रखें।"
     },
     "irrigation": {
-      "english": "Use drip irrigation only. Never wet the foliage. Irrigate in morning only so plants dry before evening.",
-      "marathi": "फक्त ठिबक सिंचन वापरा. पाने कधीही ओली करू नका. फक्त सकाळीच पाणी द्या जेणेकरून संध्याकाळपूर्वी झाडे कोरडी होतील.",
-      "hindi": "केवल ड्रिप सिंचाई उपयोग करें। पत्तियां कभी न भिगोएं। केवल सुबह सिंचाई करें ताकि शाम तक पौधे सूख जाएं।"
+      "english": "Use drip irrigation only. Never wet the foliage. Irrigate in morning so leaves dry quickly. Stop overhead watering completely during monsoon.",
+      "marathi": "फक्त ठिबक सिंचन वापरा. पाने कधीही ओली करू नका. पाने लवकर सुकावीत म्हणून सकाळी पाणी द्या. पावसाळ्यात वरून पाणी देणे पूर्णपणे बंद करा.",
+      "hindi": "केवल ड्रिप सिंचाई उपयोग करें। पत्तियां कभी न भिगोएं। पत्तियां जल्दी सूखें इसलिए सुबह सिंचाई करें। मानसून में ऊपर से सिंचाई पूरी तरह बंद करें।"
     },
     "fertilizer": {
-      "english": "Reduce nitrogen — excess makes plants susceptible. Increase Potash to 100kg/ha — improves cell wall strength and disease resistance.",
-      "marathi": "नत्र कमी करा — जास्त नत्राने झाडे संवेदनशील होतात. पोटॅश 100 किलो/हेक्टरपर्यंत वाढवा — पेशींची भिंत मजबूत होते.",
-      "hindi": "नाइट्रोजन कम करें — अधिक नाइट्रोजन पौधों को संवेदनशील बनाता है। पोटाश 100 किग्रा/हेक्टेयर तक बढ़ाएं — कोशिका भित्ति मजबूत होती है।"
+      "english": "Reduce nitrogen during high-risk humid periods. Increase potassium: Potash 100kg/ha improves plant resistance to blight.",
+      "marathi": "जास्त धोका असलेल्या दमट काळात नत्र कमी करा. पोटॅश वाढवा: पोटॅश 100 किलो/हेक्टर करपा प्रतिकारशक्ती वाढवते.",
+      "hindi": "अधिक जोखिम वाली आर्द्र अवधि में नाइट्रोजन कम करें। पोटाश बढ़ाएं: 100 किग्रा/हेक्टेयर पोटाश झुलसा प्रतिरोध बढ़ाता है।"
     }
   },
-  "Tomato___healthy": {
+  "Tomato_Leaf_Mold": {
+    "crop": {
+      "english": "Tomato",
+      "marathi": "टोमॅटो",
+      "hindi": "टमाटर"
+    },
+    "disease": {
+      "english": "Leaf Mold",
+      "marathi": "पान बुरशी रोग",
+      "hindi": "पत्ती फफूंद रोग"
+    },
+    "severity": {
+      "english": "Medium",
+      "marathi": "मध्यम",
+      "hindi": "मध्यम"
+    },
+    "symptoms": {
+      "english": "Pale green to yellow spots on the upper leaf surface with no clear edges. A velvety olive-green to brown mold growth appears on the underside of the leaf directly below the spots. Severely infected leaves curl, wither, and drop.",
+      "marathi": "पानाच्या वरच्या बाजूला फिकट हिरवे ते पिवळे डाग ज्यांना स्पष्ट कडा नसतात. डागांच्या खाली पानाच्या तळाशी मखमली ऑलिव्ह-हिरवी ते तपकिरी बुरशी दिसते. जास्त संक्रमित पाने वळतात, सुकतात आणि गळतात.",
+      "hindi": "पत्ती के ऊपरी हिस्से पर हल्के हरे से पीले धब्बे जिनके किनारे स्पष्ट नहीं होते। धब्बों के ठीक नीचे पत्ती के निचले हिस्से पर मखमली जैतूनी-हरे से भूरे रंग की फफूंद दिखती है। अधिक संक्रमित पत्तियां मुड़ती, सूखती और गिरती हैं।"
+    },
+    "treatment": {
+      "english": "Spray Mancozeb 75WP at 2g per litre, or Copper Oxychloride 50WP at 2.5g per litre. Repeat every 7-10 days. Remove and destroy severely infected leaves.",
+      "marathi": "मॅन्कोझेब 75WP 2 ग्रॅम प्रति लिटर, किंवा कॉपर ऑक्सीक्लोराईड 50WP 2.5 ग्रॅम प्रति लिटर फवारा. दर 7-10 दिवसांनी पुन्हा करा. जास्त संक्रमित पाने काढून नष्ट करा.",
+      "hindi": "मैंकोजेब 75WP 2 ग्राम प्रति लीटर, या कॉपर ऑक्सीक्लोराइड 50WP 2.5 ग्राम प्रति लीटर छिड़काव करें। हर 7-10 दिन दोहराएं। अधिक संक्रमित पत्तियां हटाकर नष्ट करें।"
+    },
+    "prevention": {
+      "english": "This disease thrives above 85% humidity — improve airflow by staking, pruning, and wider plant spacing. Avoid overhead watering. Especially common in polyhouse/greenhouse tomato; ensure ventilation.",
+      "marathi": "हा रोग 85% पेक्षा जास्त आर्द्रतेत वाढतो — झाडे बांधून, छाटणी करून आणि जास्त अंतर ठेवून हवा खेळती ठेवा. वरून पाणी देणे टाळा. पॉलिहाऊस/ग्रीनहाऊस टोमॅटोमध्ये विशेष सामान्य; हवा खेळती राहील याची खात्री करा.",
+      "hindi": "यह रोग 85% से अधिक आर्द्रता में बढ़ता है — पौधों को बांधकर, छंटाई करके और अधिक दूरी रखकर हवा का प्रवाह सुधारें। ऊपर से पानी देने से बचें। पॉलीहाउस/ग्रीनहाउस टमाटर में विशेष रूप से आम; हवादार रखना सुनिश्चित करें।"
+    },
+    "sowing": {
+      "english": "Transplant seedlings at 25-30 days old. Use wider spacing (60x60 cm) if grown under polyhouse/greenhouse to improve air circulation.",
+      "marathi": "25-30 दिवस वयाची रोपे पुनर्लावणी करा. पॉलिहाऊस/ग्रीनहाऊसमध्ये हवा खेळती राहण्यासाठी जास्त अंतर (60x60 सेमी) ठेवा.",
+      "hindi": "25-30 दिन की पौध की रोपाई करें। पॉलीहाउस/ग्रीनहाउस में हवा संचार सुधारने के लिए अधिक दूरी (60x60 सेमी) रखें।"
+    },
+    "irrigation": {
+      "english": "Use drip irrigation. Avoid wetting leaves. Water early in the day so any moisture on foliage dries before evening.",
+      "marathi": "ठिबक सिंचन वापरा. पाने ओली करणे टाळा. दिवसाच्या सुरुवातीला पाणी द्या जेणेकरून पानांवरील ओलावा संध्याकाळपूर्वी सुकेल.",
+      "hindi": "ड्रिप सिंचाई उपयोग करें। पत्तियां भिगोने से बचें। दिन की शुरुआत में सिंचाई करें ताकि पत्तियों की नमी शाम से पहले सूख जाए।"
+    },
+    "fertilizer": {
+      "english": "At transplanting: DAP 100kg/ha + Potash 80kg/ha. At 30 days: Urea 50kg/ha. Not verified: micronutrient recommendations specific to leaf mold resistance.",
+      "marathi": "पुनर्लावणीच्या वेळी: DAP 100 किलो/हेक्टर + पोटॅश 80 किलो/हेक्टर. 30 दिवसांनी: युरिया 50 किलो/हेक्टर. पडताळणी नाही: पान बुरशी प्रतिकारासाठी विशिष्ट सूक्ष्म अन्नद्रव्य शिफारसी.",
+      "hindi": "रोपाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 80 किग्रा/हेक्टेयर। 30 दिन पर: यूरिया 50 किग्रा/हेक्टेयर। सत्यापित नहीं: पत्ती फफूंद प्रतिरोध के लिए विशिष्ट सूक्ष्म पोषक सिफारिशें।"
+    }
+  },
+  "Tomato_Septoria_leaf_spot": {
+    "crop": {
+      "english": "Tomato",
+      "marathi": "टोमॅटो",
+      "hindi": "टमाटर"
+    },
+    "disease": {
+      "english": "Septoria Leaf Spot",
+      "marathi": "सेप्टोरिया पर्णडाग रोग",
+      "hindi": "सेप्टोरिया पत्ती धब्बा रोग"
+    },
+    "severity": {
+      "english": "Medium",
+      "marathi": "मध्यम",
+      "hindi": "मध्यम"
+    },
+    "symptoms": {
+      "english": "Small circular gray spots with dark brown borders on older, lower leaves first. Tiny black specks (fruiting bodies) visible in the center of spots. Leaves yellow, die, and drop, usually starting when the first fruits form.",
+      "marathi": "प्रथम जुन्या, खालच्या पानांवर गडद तपकिरी कडा असलेले लहान गोल राखाडी डाग. डागांच्या मध्यभागी लहान काळे ठिपके दिसतात. पाने पिवळी पडून मरतात आणि गळतात, साधारणपणे पहिली फळे तयार होताना सुरू होते.",
+      "hindi": "पहले पुरानी, निचली पत्तियों पर गहरे भूरे किनारे वाले छोटे गोल धूसर धब्बे। धब्बों के केंद्र में छोटे काले बिंदु दिखते हैं। पत्तियां पीली पड़कर मरती और गिरती हैं, आमतौर पर पहला फल बनने पर शुरू होता है।"
+    },
+    "treatment": {
+      "english": "Spray Mancozeb 75WP at 2g per litre every 7-10 days. Remove infected lower leaves as soon as seen.",
+      "marathi": "मॅन्कोझेब 75WP 2 ग्रॅम प्रति लिटर दर 7-10 दिवसांनी फवारा. संक्रमित खालची पाने दिसताच काढा.",
+      "hindi": "मैंकोजेब 75WP 2 ग्राम प्रति लीटर हर 7-10 दिन छिड़काव करें। संक्रमित निचली पत्तियां दिखते ही हटाएं।"
+    },
+    "prevention": {
+      "english": "Rotate crops for at least 1 year away from tomato. Remove and destroy old plant debris. Avoid overhead watering and wetting leaves. Wider row spacing reduces disease spread.",
+      "marathi": "किमान 1 वर्ष टोमॅटोपासून दूर पीक फेरपालट करा. जुने पिकाचे अवशेष काढून नष्ट करा. वरून पाणी देणे आणि पाने ओली करणे टाळा. जास्त ओळींमधील अंतर रोगप्रसार कमी करते.",
+      "hindi": "कम से कम 1 साल टमाटर से दूर फसल चक्र अपनाएं। पुराने फसल अवशेष हटाकर नष्ट करें। ऊपर से पानी देने और पत्तियां भिगोने से बचें। अधिक कतार दूरी रोग फैलाव कम करती है।"
+    },
+    "sowing": {
+      "english": "Transplant seedlings at 25-30 days old. Spacing 60x45 cm, wider spacing (up to 90 cm rows) further reduces disease severity based on field trial data.",
+      "marathi": "25-30 दिवस वयाची रोपे पुनर्लावणी करा. अंतर 60x45 सेमी, शेत चाचणी माहितीनुसार जास्त अंतर (90 सेमी पर्यंत ओळी) रोगतीव्रता आणखी कमी करते.",
+      "hindi": "25-30 दिन की पौध की रोपाई करें। दूरी 60x45 सेमी, खेत परीक्षण डेटा के अनुसार अधिक दूरी (90 सेमी तक कतारें) रोग तीव्रता और कम करती है।"
+    },
+    "irrigation": {
+      "english": "Use drip irrigation. Water at the base only. Avoid night watering and overhead sprinklers.",
+      "marathi": "ठिबक सिंचन वापरा. फक्त मुळाशी पाणी द्या. रात्री पाणी देणे आणि वरून तुषार सिंचन टाळा.",
+      "hindi": "ड्रिप सिंचाई उपयोग करें। केवल आधार पर पानी दें। रात में सिंचाई और ऊपर से स्प्रिंकलर से बचें।"
+    },
+    "fertilizer": {
+      "english": "At transplanting: DAP 100kg/ha + Potash 80kg/ha. At 30 days: Urea 50kg/ha.",
+      "marathi": "पुनर्लावणीच्या वेळी: DAP 100 किलो/हेक्टर + पोटॅश 80 किलो/हेक्टर. 30 दिवसांनी: युरिया 50 किलो/हेक्टर.",
+      "hindi": "रोपाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 80 किग्रा/हेक्टेयर। 30 दिन पर: यूरिया 50 किग्रा/हेक्टेयर।"
+    }
+  },
+  "Tomato_Spider_mites_Two_spotted_spider_mite": {
+    "crop": {
+      "english": "Tomato",
+      "marathi": "टोमॅटो",
+      "hindi": "टमाटर"
+    },
+    "disease": {
+      "english": "Two-Spotted Spider Mite",
+      "marathi": "दोन-ठिपके कोळी किड",
+      "hindi": "दो-धब्बा मकड़ी घुन"
+    },
+    "severity": {
+      "english": "Medium to High",
+      "marathi": "मध्यम ते जास्त",
+      "hindi": "मध्यम से अधिक"
+    },
+    "symptoms": {
+      "english": "This is an insect pest, not a disease. Tiny white/yellow specks (stippling) on upper leaf surface from mite feeding. Fine webbing visible on leaves and between stems in heavy infestation. Leaves turn bronze/yellow and drop. Thrives in hot, dry weather.",
+      "marathi": "ही एक कीड आहे, रोग नाही. किडीच्या खाण्यामुळे पानाच्या वरच्या पृष्ठभागावर लहान पांढरे/पिवळे ठिपके. जास्त प्रादुर्भावात पानांवर आणि खोडांमध्ये बारीक जाळे दिसते. पाने कांस्य/पिवळी होऊन गळतात. उष्ण, कोरड्या हवामानात वाढते.",
+      "hindi": "यह एक कीट है, रोग नहीं। कीट के खाने से पत्ती की ऊपरी सतह पर छोटे सफेद/पीले धब्बे। भारी प्रकोप में पत्तियों और तनों के बीच महीन जाला दिखता है। पत्तियां कांस्य/पीली होकर गिरती हैं। गर्म, सूखे मौसम में बढ़ता है।"
+    },
+    "treatment": {
+      "english": "Spray Wettable Sulfur 80WP at 2g per litre, or a recommended miticide such as Dicofol 18.5EC at 2.5ml per litre. Repeat after 10 days if infestation continues. Not verified: newer miticide products and exact local dosage — confirm with a local KVK officer before large-scale spraying, since mites can develop resistance to specific chemicals.",
+      "marathi": "वेटेबल सल्फर 80WP 2 ग्रॅम प्रति लिटर, किंवा शिफारस केलेले माइटनाशक जसे डायकोफॉल 18.5EC 2.5 मिली प्रति लिटर फवारा. प्रादुर्भाव सुरू राहिल्यास 10 दिवसांनी पुन्हा करा. पडताळणी नाही: नवीन माइटनाशक उत्पादने आणि नेमका स्थानिक डोस — मोठ्या प्रमाणात फवारणीपूर्वी स्थानिक KVK अधिकाऱ्याशी संपर्क करा, कारण किडींमध्ये विशिष्ट रसायनांना प्रतिकारशक्ती विकसित होऊ शकते.",
+      "hindi": "वेटेबल सल्फर 80WP 2 ग्राम प्रति लीटर, या अनुशंसित माइटनाशक जैसे डाइकोफॉल 18.5EC 2.5 मिली प्रति लीटर छिड़काव करें। प्रकोप जारी रहने पर 10 दिन बाद दोहराएं। सत्यापित नहीं: नए माइटनाशक उत्पाद और सटीक स्थानीय खुराक — बड़े पैमाने पर छिड़काव से पहले स्थानीय KVK अधिकारी से संपर्क करें, क्योंकि घुन विशिष्ट रसायनों के प्रति प्रतिरोध विकसित कर सकते हैं।"
+    },
+    "prevention": {
+      "english": "Monitor undersides of leaves regularly, especially in hot dry weather. Avoid excess nitrogen fertilizer, which favors mite buildup. Keep field free of dust; occasional overhead water sprays can help reduce mite populations (unlike fungal diseases).",
+      "marathi": "विशेषतः उष्ण कोरड्या हवामानात पानांच्या खालच्या बाजू नियमित तपासा. जास्त नत्र खत टाळा, त्यामुळे किडींची वाढ होते. शेत धुळीपासून मुक्त ठेवा; अधूनमधून वरून पाणी फवारल्याने किडींची संख्या कमी होण्यास मदत होते (बुरशीजन्य रोगांप्रमाणे नाही).",
+      "hindi": "विशेष रूप से गर्म सूखे मौसम में पत्तियों के नीचे नियमित जांच करें। अधिक नाइट्रोजन खाद से बचें, इससे घुन बढ़ते हैं। खेत को धूल मुक्त रखें; कभी-कभी ऊपर से पानी छिड़कने से घुन की संख्या कम करने में मदद मिलती है (फफूंद रोगों के विपरीत)।"
+    },
+    "sowing": {
+      "english": "Transplant seedlings at 25-30 days old. Spacing 60x45 cm. Best season: October-November and June-July in Maharashtra.",
+      "marathi": "25-30 दिवस वयाची रोपे पुनर्लावणी करा. अंतर 60x45 सेमी. महाराष्ट्रात सर्वोत्तम हंगाम: ऑक्टोबर-नोव्हेंबर आणि जून-जुलै.",
+      "hindi": "25-30 दिन की पौध की रोपाई करें। दूरी 60x45 सेमी। महाराष्ट्र में सर्वोत्तम मौसम: अक्टूबर-नवंबर और जून-जुलाई।"
+    },
+    "irrigation": {
+      "english": "Irrigate every 5-7 days. Avoid drought stress, which increases mite susceptibility. Drip irrigation preferred.",
+      "marathi": "दर 5-7 दिवसांनी पाणी द्या. दुष्काळी ताण टाळा, त्यामुळे किडींची संवेदनशीलता वाढते. ठिबक सिंचन प्राधान्याने वापरा.",
+      "hindi": "हर 5-7 दिन सिंचाई करें। सूखे के तनाव से बचें, इससे घुन संवेदनशीलता बढ़ती है। ड्रिप सिंचाई बेहतर है।"
+    },
+    "fertilizer": {
+      "english": "At transplanting: DAP 100kg/ha + Potash 80kg/ha. At 30 days: Urea 50kg/ha. Avoid excess nitrogen beyond recommended dose.",
+      "marathi": "पुनर्लावणीच्या वेळी: DAP 100 किलो/हेक्टर + पोटॅश 80 किलो/हेक्टर. 30 दिवसांनी: युरिया 50 किलो/हेक्टर. शिफारशीपेक्षा जास्त नत्र टाळा.",
+      "hindi": "रोपाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 80 किग्रा/हेक्टेयर। 30 दिन पर: यूरिया 50 किग्रा/हेक्टेयर। अनुशंसित मात्रा से अधिक नाइट्रोजन से बचें।"
+    }
+  },
+  "Tomato__Target_Spot": {
+    "crop": {
+      "english": "Tomato",
+      "marathi": "टोमॅटो",
+      "hindi": "टमाटर"
+    },
+    "disease": {
+      "english": "Target Spot",
+      "marathi": "लक्ष्य-डाग रोग",
+      "hindi": "लक्ष्य धब्बा रोग"
+    },
+    "severity": {
+      "english": "Medium to High",
+      "marathi": "मध्यम ते जास्त",
+      "hindi": "मध्यम से अधिक"
+    },
+    "symptoms": {
+      "english": "Small dark brown pinpoint spots on leaves that enlarge into light brown/gray centers with dark concentric rings, similar in appearance to early blight. Fruit shows small sunken brown flecks that expand into deep pits, sometimes with star-shaped cracking.",
+      "marathi": "पानांवर लहान गडद तपकिरी ठिपके जे मोठे होऊन फिकट तपकिरी/राखाडी मध्यभाग आणि गडद केंद्रित वलयांसह होतात, दिसायला अर्ली ब्लाइट सारखेच. फळावर लहान खोलगट तपकिरी डाग जे खोल खड्ड्यांमध्ये वाढतात, कधी ताऱ्याच्या आकाराच्या भेगांसह.",
+      "hindi": "पत्तियों पर छोटे गहरे भूरे बिंदीदार धब्बे जो बड़े होकर हल्के भूरे/धूसर केंद्र और गहरे संकेंद्रित छल्लों वाले हो जाते हैं, दिखने में अगेती झुलसा जैसे। फल पर छोटे धंसे भूरे धब्बे जो गहरे गड्ढों में बदल जाते हैं, कभी तारे के आकार की दरार के साथ।"
+    },
+    "treatment": {
+      "english": "Spray Mancozeb 75WP at 2g per litre, or Azoxystrobin-based fungicide where available. Repeat every 7-10 days. Symptoms are easily confused with early blight — if unsure, treat as for early blight since Mancozeb controls both.",
+      "marathi": "मॅन्कोझेब 75WP 2 ग्रॅम प्रति लिटर, किंवा उपलब्ध असल्यास अझोक्सिस्ट्रोबिन-आधारित बुरशीनाशक फवारा. दर 7-10 दिवसांनी पुन्हा करा. लक्षणे अर्ली ब्लाइटशी सहज गोंधळात टाकतात — खात्री नसल्यास अर्ली ब्लाइटप्रमाणे उपचार करा कारण मॅन्कोझेब दोन्हीवर नियंत्रण ठेवते.",
+      "hindi": "मैंकोजेब 75WP 2 ग्राम प्रति लीटर, या उपलब्ध होने पर एज़ोक्सीस्ट्रोबिन-आधारित फफूंदनाशक छिड़काव करें। हर 7-10 दिन दोहराएं। लक्षण अगेती झुलसा से आसानी से भ्रमित होते हैं — अनिश्चित होने पर अगेती झुलसा जैसा उपचार करें क्योंकि मैंकोजेब दोनों को नियंत्रित करता है।"
+    },
+    "prevention": {
+      "english": "Favored by warm, humid weather. Improve airflow with staking and wider spacing. Rotate crops. Remove infected debris after harvest.",
+      "marathi": "उष्ण, दमट हवामानात वाढतो. झाडे बांधून आणि जास्त अंतर ठेवून हवा खेळती ठेवा. पीक फेरपालट करा. काढणीनंतर संक्रमित अवशेष काढा.",
+      "hindi": "गर्म, आर्द्र मौसम में बढ़ता है। बांधकर और अधिक दूरी रखकर हवा प्रवाह सुधारें। फसल चक्र अपनाएं। कटाई के बाद संक्रमित अवशेष हटाएं।"
+    },
+    "sowing": {
+      "english": "Transplant seedlings at 25-30 days old. Spacing 60x45 cm. Best season: October-November and June-July in Maharashtra.",
+      "marathi": "25-30 दिवस वयाची रोपे पुनर्लावणी करा. अंतर 60x45 सेमी. महाराष्ट्रात सर्वोत्तम हंगाम: ऑक्टोबर-नोव्हेंबर आणि जून-जुलै.",
+      "hindi": "25-30 दिन की पौध की रोपाई करें। दूरी 60x45 सेमी। महाराष्ट्र में सर्वोत्तम मौसम: अक्टूबर-नवंबर और जून-जुलाई।"
+    },
+    "irrigation": {
+      "english": "Use drip irrigation. Avoid overhead watering and wetting foliage. Irrigate every 5-7 days.",
+      "marathi": "ठिबक सिंचन वापरा. वरून पाणी देणे आणि पाने ओली करणे टाळा. दर 5-7 दिवसांनी पाणी द्या.",
+      "hindi": "ड्रिप सिंचाई उपयोग करें। ऊपर से सिंचाई और पत्तियां भिगोने से बचें। हर 5-7 दिन सिंचाई करें।"
+    },
+    "fertilizer": {
+      "english": "At transplanting: DAP 100kg/ha + Potash 80kg/ha. At 30 days: Urea 50kg/ha.",
+      "marathi": "पुनर्लावणीच्या वेळी: DAP 100 किलो/हेक्टर + पोटॅश 80 किलो/हेक्टर. 30 दिवसांनी: युरिया 50 किलो/हेक्टर.",
+      "hindi": "रोपाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 80 किग्रा/हेक्टेयर। 30 दिन पर: यूरिया 50 किग्रा/हेक्टेयर।"
+    }
+  },
+  "Tomato__Tomato_YellowLeaf__Curl_Virus": {
+    "crop": {
+      "english": "Tomato",
+      "marathi": "टोमॅटो",
+      "hindi": "टमाटर"
+    },
+    "disease": {
+      "english": "Tomato Yellow Leaf Curl Virus",
+      "marathi": "टोमॅटो पर्णगुच्छ विषाणू रोग",
+      "hindi": "टमाटर पत्ती मोड़क विषाणु रोग"
+    },
+    "severity": {
+      "english": "Very High - No cure once infected",
+      "marathi": "अत्यंत धोकादायक - संक्रमणानंतर उपचार नाही",
+      "hindi": "बहुत अधिक - संक्रमण के बाद कोई इलाज नहीं"
+    },
+    "symptoms": {
+      "english": "Leaves are small, curl upward, and turn yellow especially at the edges. Plant growth is stunted with shortened internodes and bushy appearance. Flowers may drop. Yield loss can be severe (up to 50-80% in heavy infestation) since this is a virus with no chemical cure.",
+      "marathi": "पाने लहान होतात, वरच्या बाजूला वळतात आणि विशेषतः कडांवर पिवळी पडतात. झाडाची वाढ खुंटते, आंतरगाठी लहान होतात आणि झुडपासारखे दिसते. फुले गळू शकतात. जास्त प्रादुर्भावात उत्पन्न मोठ्या प्रमाणात (50-80% पर्यंत) घटू शकते कारण हा विषाणू आहे, त्यावर रासायनिक उपचार नाही.",
+      "hindi": "पत्तियां छोटी होती हैं, ऊपर की ओर मुड़ती हैं, और विशेष रूप से किनारों पर पीली पड़ती हैं। पौधे की वृद्धि रुक जाती है, गांठों के बीच की दूरी कम होती है और झाड़ीदार दिखता है। फूल गिर सकते हैं। भारी प्रकोप में उपज हानि गंभीर हो सकती है (50-80% तक) क्योंकि यह एक विषाणु है, जिसका कोई रासायनिक इलाज नहीं है।"
+    },
+    "treatment": {
+      "english": "There is no cure for the virus itself. Remove and destroy infected plants immediately to stop spread. Control the whitefly vector (Bemisia tabaci) that spreads the virus using Imidacloprid 17.8SL at 0.3ml per litre or yellow sticky traps. Consult local KVK officer for current recommended insecticide as whitefly resistance varies by region.",
+      "marathi": "विषाणूवर स्वतःवर उपचार नाही. प्रसार थांबवण्यासाठी संक्रमित झाडे तातडीने काढून नष्ट करा. विषाणू पसरवणाऱ्या पांढऱ्या माशीचे (बेमिसिया टॅबॅसी) नियंत्रण इमिडाक्लोप्रिड 17.8SL 0.3 मिली प्रति लिटर किंवा पिवळ्या चिकट सापळ्यांनी करा. प्रादेशिकानुसार पांढऱ्या माशीची प्रतिकारशक्ती बदलत असल्याने सध्याच्या शिफारशीसाठी स्थानिक KVK अधिकाऱ्याशी संपर्क करा.",
+      "hindi": "विषाणु का स्वयं कोई इलाज नहीं है। फैलाव रोकने के लिए संक्रमित पौधे तुरंत हटाकर नष्ट करें। विषाणु फैलाने वाली सफेद मक्खी (बेमिसिया टबैसी) को इमिडाक्लोप्रिड 17.8SL 0.3 मिली प्रति लीटर या पीले चिपचिपे जाल से नियंत्रित करें। क्षेत्र के अनुसार सफेद मक्खी प्रतिरोध अलग होने के कारण वर्तमान अनुशंसित कीटनाशक हेतु स्थानीय KVK अधिकारी से संपर्क करें।"
+    },
+    "prevention": {
+      "english": "Use virus-resistant tomato varieties where available. Use UV-reflective silver mulch to repel whiteflies. Install yellow sticky traps for early whitefly detection. Keep field free of weeds that host whiteflies. Use whitefly-free, healthy transplants only.",
+      "marathi": "उपलब्ध असल्यास विषाणू-प्रतिरोधक टोमॅटो वाण वापरा. पांढऱ्या माशीला दूर ठेवण्यासाठी UV-परावर्तक चांदी रंगाचे आच्छादन वापरा. लवकर ओळखीसाठी पिवळे चिकट सापळे लावा. पांढऱ्या माशीला आश्रय देणारे तण शेतातून काढा. फक्त पांढऱ्या माशीमुक्त, निरोगी रोपे वापरा.",
+      "hindi": "उपलब्ध होने पर विषाणु-प्रतिरोधी टमाटर किस्में उपयोग करें। सफेद मक्खी को दूर रखने के लिए UV-परावर्तक चांदी रंग की मल्चिंग उपयोग करें। जल्दी पहचान के लिए पीले चिपचिपे जाल लगाएं। सफेद मक्खी को आश्रय देने वाले खरपतवार खेत से हटाएं। केवल सफेद मक्खी-मुक्त, स्वस्थ पौध उपयोग करें।"
+    },
+    "sowing": {
+      "english": "Transplant only healthy, whitefly-free seedlings. Spacing 60x45 cm. Avoid planting near cotton or cucurbit fields, which also host whiteflies.",
+      "marathi": "फक्त निरोगी, पांढऱ्या माशीमुक्त रोपे लावा. अंतर 60x45 सेमी. कापूस किंवा कुकुर्बिट पिकांजवळ लावणे टाळा, ती देखील पांढऱ्या माशीला आश्रय देतात.",
+      "hindi": "केवल स्वस्थ, सफेद मक्खी-मुक्त पौध रोपें। दूरी 60x45 सेमी। कपास या कुकुरबिट फसलों के पास रोपने से बचें, ये भी सफेद मक्खी को आश्रय देती हैं।"
+    },
+    "irrigation": {
+      "english": "Irrigate every 5-7 days. Irrigation method has no direct effect on virus spread — vector (whitefly) control is the priority.",
+      "marathi": "दर 5-7 दिवसांनी पाणी द्या. सिंचन पद्धतीचा विषाणू प्रसारावर थेट परिणाम होत नाही — वाहक (पांढरी माशी) नियंत्रण प्राधान्य आहे.",
+      "hindi": "हर 5-7 दिन सिंचाई करें। सिंचाई विधि का विषाणु प्रसार पर सीधा प्रभाव नहीं पड़ता — वाहक (सफेद मक्खी) नियंत्रण प्राथमिकता है।"
+    },
+    "fertilizer": {
+      "english": "At transplanting: DAP 100kg/ha + Potash 80kg/ha. At 30 days: Urea 50kg/ha. Healthy, well-nourished plants tolerate virus stress somewhat better, but fertilizer does not prevent or cure infection.",
+      "marathi": "पुनर्लावणीच्या वेळी: DAP 100 किलो/हेक्टर + पोटॅश 80 किलो/हेक्टर. 30 दिवसांनी: युरिया 50 किलो/हेक्टर. निरोगी, चांगले पोषण असलेली झाडे विषाणू ताण काहीसा चांगला सहन करतात, पण खत संसर्ग रोखत किंवा बरा करत नाही.",
+      "hindi": "रोपाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 80 किग्रा/हेक्टेयर। 30 दिन पर: यूरिया 50 किग्रा/हेक्टेयर। स्वस्थ, अच्छी तरह पोषित पौधे विषाणु तनाव कुछ बेहतर सहन करते हैं, पर खाद संक्रमण को रोकती या ठीक नहीं करती।"
+    }
+  },
+  "Tomato__Tomato_mosaic_virus": {
+    "crop": {
+      "english": "Tomato",
+      "marathi": "टोमॅटो",
+      "hindi": "टमाटर"
+    },
+    "disease": {
+      "english": "Tomato Mosaic Virus",
+      "marathi": "टोमॅटो मोझॅक विषाणू रोग",
+      "hindi": "टमाटर मोज़ेक विषाणु रोग"
+    },
+    "severity": {
+      "english": "High - No cure once infected",
+      "marathi": "जास्त - संक्रमणानंतर उपचार नाही",
+      "hindi": "अधिक - संक्रमण के बाद कोई इलाज नहीं"
+    },
+    "symptoms": {
+      "english": "Light and dark green mottled pattern on leaves. Leaves may be curled, distorted, or smaller than normal. Plant growth is stunted. Fruit may ripen unevenly or show internal browning. Spread easily by handling plants, tools, and infected seed — not by insects.",
+      "marathi": "पानांवर फिकट आणि गडद हिरव्या रंगाचा ठिपकेदार नमुना. पाने वळलेली, विकृत किंवा नेहमीपेक्षा लहान असू शकतात. झाडाची वाढ खुंटते. फळ असमान पिकू शकते किंवा आतून तपकिरी होऊ शकते. झाडे हाताळणे, अवजारे आणि संक्रमित बियाण्यांमुळे सहज पसरतो — किडींमुळे नाही.",
+      "hindi": "पत्तियों पर हल्के और गहरे हरे रंग का धब्बेदार पैटर्न। पत्तियां मुड़ी, विकृत, या सामान्य से छोटी हो सकती हैं। पौधे की वृद्धि रुक जाती है। फल असमान रूप से पक सकता है या अंदर से भूरा हो सकता है। पौधों को छूने, औजारों और संक्रमित बीज से आसानी से फैलता है — कीटों से नहीं।"
+    },
+    "treatment": {
+      "english": "There is no chemical cure for this virus. Remove and destroy infected plants immediately to reduce spread to healthy plants. Disinfect hands and tools with soap or a mild bleach solution after handling infected plants, before touching healthy ones.",
+      "marathi": "या विषाणूवर रासायनिक उपचार नाही. निरोगी झाडांमध्ये प्रसार कमी करण्यासाठी संक्रमित झाडे तातडीने काढून नष्ट करा. संक्रमित झाडे हाताळल्यानंतर, निरोगी झाडांना स्पर्श करण्यापूर्वी साबण किंवा सौम्य ब्लीच द्रावणाने हात आणि अवजारे निर्जंतुक करा.",
+      "hindi": "इस विषाणु का कोई रासायनिक इलाज नहीं है। स्वस्थ पौधों में फैलाव कम करने के लिए संक्रमित पौधे तुरंत हटाकर नष्ट करें। संक्रमित पौधों को छूने के बाद, स्वस्थ पौधों को छूने से पहले साबुन या हल्के ब्लीच घोल से हाथ और औजार कीटाणुरहित करें।"
+    },
+    "prevention": {
+      "english": "Use certified virus-free seed only — the virus is commonly seedborne. Wash hands thoroughly before handling plants, especially after using tobacco products (the related tobacco mosaic virus can cross-infect). Disinfect stakes, ties, and tools between uses. Remove and destroy infected plant debris.",
+      "marathi": "फक्त प्रमाणित विषाणूमुक्त बियाणे वापरा — हा विषाणू सामान्यतः बियाण्यातून पसरतो. झाडे हाताळण्यापूर्वी हात नीट धुवा, विशेषतः तंबाखू उत्पादने वापरल्यानंतर (संबंधित तंबाखू मोझॅक विषाणू देखील संक्रमित करू शकतो). काठ्या, बांधणी दोरी आणि अवजारे प्रत्येक वापरानंतर निर्जंतुक करा. संक्रमित पिकाचे अवशेष काढून नष्ट करा.",
+      "hindi": "केवल प्रमाणित विषाणु-मुक्त बीज उपयोग करें — यह विषाणु आमतौर पर बीज जनित होता है। पौधों को छूने से पहले हाथ अच्छी तरह धोएं, विशेष रूप से तंबाकू उत्पाद उपयोग करने के बाद (संबंधित तंबाकू मोज़ेक विषाणु भी संक्रमित कर सकता है)। डंडे, बांधने की रस्सी और औजार हर उपयोग के बीच कीटाणुरहित करें। संक्रमित फसल अवशेष हटाकर नष्ट करें।"
+    },
+    "sowing": {
+      "english": "Use only certified virus-free seed and healthy transplants. Spacing 60x45 cm.",
+      "marathi": "फक्त प्रमाणित विषाणूमुक्त बियाणे आणि निरोगी रोपे वापरा. अंतर 60x45 सेमी.",
+      "hindi": "केवल प्रमाणित विषाणु-मुक्त बीज और स्वस्थ पौध उपयोग करें। दूरी 60x45 सेमी।"
+    },
+    "irrigation": {
+      "english": "Irrigate every 5-7 days. Irrigation method has no direct effect on this virus — sanitation practice is the priority for prevention.",
+      "marathi": "दर 5-7 दिवसांनी पाणी द्या. सिंचन पद्धतीचा या विषाणूवर थेट परिणाम होत नाही — प्रतिबंधासाठी स्वच्छता पद्धत प्राधान्य आहे.",
+      "hindi": "हर 5-7 दिन सिंचाई करें। सिंचाई विधि का इस विषाणु पर सीधा प्रभाव नहीं पड़ता — रोकथाम के लिए स्वच्छता प्रथा प्राथमिकता है।"
+    },
+    "fertilizer": {
+      "english": "At transplanting: DAP 100kg/ha + Potash 80kg/ha. At 30 days: Urea 50kg/ha. Fertilizer does not prevent or cure viral infection.",
+      "marathi": "पुनर्लावणीच्या वेळी: DAP 100 किलो/हेक्टर + पोटॅश 80 किलो/हेक्टर. 30 दिवसांनी: युरिया 50 किलो/हेक्टर. खत विषाणू संसर्ग रोखत किंवा बरा करत नाही.",
+      "hindi": "रोपाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 80 किग्रा/हेक्टेयर। 30 दिन पर: यूरिया 50 किग्रा/हेक्टेयर। खाद विषाणु संक्रमण को रोकती या ठीक नहीं करती।"
+    }
+  },
+  "Tomato_healthy": {
     "crop": {
       "english": "Tomato",
       "marathi": "टोमॅटो",
@@ -392,175 +580,81 @@
       "hindi": "कोई नहीं"
     },
     "symptoms": {
-      "english": "No disease detected. Your tomato crop looks healthy!",
-      "marathi": "कोणताही रोग आढळला नाही. तुमचे टोमॅटोचे पीक निरोगी आहे!",
-      "hindi": "कोई रोग नहीं मिला। आपकी टमाटर की फसल स्वस्थ है!"
+      "english": "No supported disease condition was detected by the model. This does not guarantee the crop is completely free of all problems.",
+      "marathi": "मॉडेलला कोणताही ज्ञात रोग आढळला नाही. याचा अर्थ पीक पूर्णपणे समस्यामुक्त आहे असे नाही.",
+      "hindi": "मॉडल को कोई ज्ञात रोग नहीं मिला। इसका मतलब यह नहीं कि फसल पूरी तरह समस्या-मुक्त है।"
     },
     "treatment": {
-      "english": "No treatment needed. Continue staking, pruning suckers and regular fertilization.",
-      "marathi": "उपचाराची गरज नाही. बांधणी, जादा फांद्या काढणे आणि नियमित खते सुरू ठेवा.",
-      "hindi": "उपचार की जरूरत नहीं। बांधना, अतिरिक्त शाखाएं हटाना और नियमित खाद जारी रखें।"
+      "english": "No treatment needed. Continue staking, pruning suckers, and regular monitoring for pests and disease.",
+      "marathi": "उपचाराची गरज नाही. झाडे बांधणे, फुटवे काढणे आणि किड-रोगासाठी नियमित निरीक्षण सुरू ठेवा.",
+      "hindi": "उपचार की जरूरत नहीं। बांधना, अनावश्यक शाखाएं हटाना और कीट-रोग की नियमित निगरानी जारी रखें।"
     },
     "prevention": {
-      "english": "Check weekly for whitefly, early blight and fruit borer. Use yellow sticky traps for whitefly monitoring.",
-      "marathi": "पांढरी माशी, अर्ली ब्लाइट आणि फळ पोखरणारी अळी यांसाठी आठवड्यातून तपासा. पांढऱ्या माशीसाठी पिवळे चिकट सापळे वापरा.",
-      "hindi": "साप्ताहिक सफेद मक्खी, अर्ली ब्लाइट और फल छेदक के लिए जांचें। सफेद मक्खी निगरानी के लिए पीले चिपचिपे जाल उपयोग करें।"
+      "english": "Check weekly for early signs of blight, bacterial spot, and whitefly activity. Remove lower leaves touching soil. Rotate crops each season.",
+      "marathi": "करपा, जिवाणूजन्य ठिपके आणि पांढऱ्या माशीच्या लवकर लक्षणांसाठी आठवड्यातून तपासा. जमिनीला स्पर्श करणारी खालची पाने काढा. दरवर्षी पीक फेरपालट करा.",
+      "hindi": "झुलसा, जीवाणु धब्बा और सफेद मक्खी गतिविधि के शुरुआती लक्षणों के लिए साप्ताहिक जांच करें। मिट्टी छूने वाली निचली पत्तियां हटाएं। हर सीजन फसल चक्र अपनाएं।"
     },
     "sowing": {
-      "english": "Transplant 25-30 day old seedlings. Best season October-November. Spacing 60x45 cm. Stake plants at 30 days.",
-      "marathi": "25-30 दिवस वयाची रोपे पुनर्लावणी करा. सर्वोत्तम हंगाम ऑक्टोबर-नोव्हेंबर. अंतर 60x45 सेमी. 30 दिवसांनी झाडे बांधा.",
-      "hindi": "25-30 दिन की पौध की रोपाई करें। सर्वोत्तम मौसम अक्टूबर-नवंबर। दूरी 60x45 सेमी। 30 दिन पर पौधों को बांधें।"
+      "english": "Transplant seedlings at 25-30 days old. Spacing 60x45 cm. Best season: October-November and June-July in Maharashtra.",
+      "marathi": "25-30 दिवस वयाची रोपे पुनर्लावणी करा. अंतर 60x45 सेमी. महाराष्ट्रात सर्वोत्तम हंगाम: ऑक्टोबर-नोव्हेंबर आणि जून-जुलै.",
+      "hindi": "25-30 दिन की पौध की रोपाई करें। दूरी 60x45 सेमी। महाराष्ट्र में सर्वोत्तम मौसम: अक्टूबर-नवंबर और जून-जुलाई।"
     },
     "irrigation": {
-      "english": "Irrigate every 5-7 days. Use drip irrigation if possible. Critical at flowering and fruit setting. Total 600-700mm per season.",
-      "marathi": "दर 5-7 दिवसांनी पाणी द्या. शक्य असल्यास ठिबक सिंचन वापरा. फुलोरा आणि फळधारणा वेळी महत्त्वाचे. हंगामात एकूण 600-700 मिमी.",
-      "hindi": "हर 5-7 दिन पर सिंचाई करें। संभव हो तो ड्रिप सिंचाई उपयोग करें। फूल और फल लगने पर जरूरी। प्रति सीजन कुल 600-700 मिमी।"
+      "english": "Irrigate every 5-7 days. Critical at flowering and fruit setting. Use drip irrigation. Total 600-700mm per season.",
+      "marathi": "दर 5-7 दिवसांनी पाणी द्या. फुलोरा आणि फळधारणा वेळी महत्त्वाचे. ठिबक सिंचन वापरा. हंगामात एकूण 600-700 मिमी.",
+      "hindi": "हर 5-7 दिन सिंचाई करें। फूल और फल लगने के समय जरूरी। ड्रिप सिंचाई उपयोग करें। प्रति सीजन कुल 600-700 मिमी।"
     },
     "fertilizer": {
-      "english": "At transplanting: DAP 100kg/ha + Potash 80kg/ha + FYM 20 tons/ha. At 30 days: Urea 50kg/ha. At flowering: Potash 40kg/ha extra.",
-      "marathi": "पुनर्लावणीच्या वेळी: DAP 100 किलो/हेक्टर + पोटॅश 80 किलो/हेक्टर + शेणखत 20 टन/हेक्टर. 30 दिवसांनी: युरिया 50 किलो/हेक्टर. फुलोऱ्यावर: अतिरिक्त पोटॅश 40 किलो/हेक्टर.",
-      "hindi": "रोपाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 80 किग्रा/हेक्टेयर + FYM 20 टन/हेक्टेयर। 30 दिन पर: यूरिया 50 किग्रा/हेक्टेयर। फूल पर: अतिरिक्त पोटाश 40 किग्रा/हेक्टेयर।"
+      "english": "At transplanting: DAP 100kg/ha + Potash 80kg/ha. At 30 days: Urea 50kg/ha. At flowering: Potash 40kg/ha extra for fruit quality.",
+      "marathi": "पुनर्लावणीच्या वेळी: DAP 100 किलो/हेक्टर + पोटॅश 80 किलो/हेक्टर. 30 दिवसांनी: युरिया 50 किलो/हेक्टर. फुलोऱ्यावर: फळ दर्जासाठी अतिरिक्त पोटॅश 40 किलो/हेक्टर.",
+      "hindi": "रोपाई पर: DAP 100 किग्रा/हेक्टेयर + पोटाश 80 किग्रा/हेक्टेयर। 30 दिन पर: यूरिया 50 किग्रा/हेक्टेयर। फूल पर: फल गुणवत्ता के लिए अतिरिक्त पोटाश 40 किग्रा/हेक्टेयर।"
     }
   },
-  "Soybean___healthy": {
+  "uncertain": {
     "crop": {
-      "english": "Soybean",
-      "marathi": "सोयाबीन",
-      "hindi": "सोयाबीन"
+      "english": "Unknown",
+      "marathi": "अज्ञात",
+      "hindi": "अज्ञात"
     },
     "disease": {
-      "english": "Healthy",
-      "marathi": "निरोगी",
-      "hindi": "स्वस्थ"
+      "english": "Could not identify clearly",
+      "marathi": "स्पष्ट ओळखता आले नाही",
+      "hindi": "स्पष्ट पहचान नहीं हो सकी"
     },
     "severity": {
-      "english": "None",
-      "marathi": "नाही",
-      "hindi": "कोई नहीं"
+      "english": "Unknown",
+      "marathi": "अज्ञात",
+      "hindi": "अज्ञात"
     },
     "symptoms": {
-      "english": "No disease detected. Your soybean crop looks healthy!",
-      "marathi": "कोणताही रोग आढळला नाही. तुमचे सोयाबीनचे पीक निरोगी आहे!",
-      "hindi": "कोई रोग नहीं मिला। आपकी सोयाबीन की फसल स्वस्थ है!"
+      "english": "Image unclear, poorly lit, or the crop/disease may not be in our current database (only Potato and Tomato are currently supported).",
+      "marathi": "फोटो अस्पष्ट, कमी प्रकाशातील आहे, किंवा हे पीक/रोग आमच्या सध्याच्या डेटाबेसमध्ये नसू शकते (सध्या फक्त बटाटा आणि टोमॅटो समर्थित आहेत).",
+      "hindi": "फोटो अस्पष्ट, कम रोशनी में है, या यह फसल/रोग हमारे वर्तमान डेटाबेस में नहीं हो सकता (वर्तमान में केवल आलू और टमाटर समर्थित हैं)।"
     },
     "treatment": {
-      "english": "No treatment needed. Ensure proper rhizobium inoculation for nitrogen fixation.",
-      "marathi": "उपचाराची गरज नाही. नत्र स्थिरीकरणासाठी योग्य रायझोबियम बीजप्रक्रिया करा.",
-      "hindi": "उपचार की जरूरत नहीं। नाइट्रोजन स्थिरीकरण के लिए उचित राइजोबियम टीकाकरण सुनिश्चित करें।"
+      "english": "Please retake the photo in good natural light, keeping the leaf flat and in focus. Consult your local KVK officer for an accurate diagnosis.",
+      "marathi": "चांगल्या नैसर्गिक प्रकाशात पुन्हा फोटो काढा, पान सपाट आणि स्पष्ट दिसू द्या. अचूक निदानासाठी स्थानिक KVK अधिकाऱ्याशी संपर्क करा.",
+      "hindi": "अच्छी प्राकृतिक रोशनी में दोबारा फोटो लें, पत्ती सपाट और स्पष्ट रखें। सटीक निदान के लिए स्थानिक KVK अधिकारी से संपर्क करें।"
     },
     "prevention": {
-      "english": "Monitor weekly for Yellow Mosaic Virus spread by whitefly. Check for pod borer at flowering. Scout for girdle beetle early.",
-      "marathi": "पांढऱ्या माशीद्वारे पसरणाऱ्या पिवळ्या मोझॅकसाठी आठवड्यातून तपासा. फुलोऱ्यावर शेंगा पोखरणाऱ्या अळीसाठी तपासा. गर्डल बीटलसाठी लवकर निरीक्षण करा.",
-      "hindi": "सफेद मक्खी द्वारा फैलने वाले पीले मोजेक के लिए साप्ताहिक जांचें। फूल पर फली छेदक की जांच करें। गर्डल बीटल के लिए जल्दी निगरानी करें।"
+      "english": "Not applicable - no disease identified.",
+      "marathi": "लागू नाही - कोणताही रोग ओळखला गेला नाही.",
+      "hindi": "लागू नहीं - कोई रोग पहचाना नहीं गया।"
     },
     "sowing": {
-      "english": "Best time: June 15 to July 15 after first good rain in Maharashtra. Seed rate 70-80 kg/hectare. Row spacing 45x5 cm. Depth 3-4 cm. Treat seeds with Rhizobium + Trichoderma before sowing.",
-      "marathi": "महाराष्ट्रात सर्वोत्तम वेळ: पहिल्या चांगल्या पावसानंतर 15 जून ते 15 जुलै. बियाणे दर 70-80 किलो/हेक्टर. ओळ अंतर 45x5 सेमी. खोली 3-4 सेमी. पेरणीपूर्वी रायझोबियम + ट्रायकोडर्मा बीजप्रक्रिया करा.",
-      "hindi": "महाराष्ट्र में सर्वोत्तम समय: पहली अच्छी बारिश के बाद 15 जून से 15 जुलाई। बीज दर 70-80 किग्रा/हेक्टेयर। कतार दूरी 45x5 सेमी। गहराई 3-4 सेमी। बुवाई से पहले राइजोबियम + ट्राइकोडर्मा से बीज उपचार करें।"
+      "english": "Not applicable.",
+      "marathi": "लागू नाही.",
+      "hindi": "लागू नहीं।"
     },
     "irrigation": {
-      "english": "Soybean needs 350-400mm per season. Critical stages: Flowering (45-50 days) and Pod filling (70-80 days). Avoid waterlogging — roots rot within 48 hours. No irrigation needed if rainfall is adequate.",
-      "marathi": "सोयाबीनला हंगामात 350-400 मिमी पाणी लागते. महत्त्वाचे टप्पे: फुलोरा (45-50 दिवस) आणि शेंगा भरणे (70-80 दिवस). साचलेले पाणी टाळा — 48 तासांत मुळे कुजतात. पाऊस पुरेसा असल्यास सिंचन नको.",
-      "hindi": "सोयाबीन को प्रति सीजन 350-400 मिमी पानी चाहिए। महत्वपूर्ण अवस्थाएं: फूल (45-50 दिन) और फली भरना (70-80 दिन)। जलभराव से बचें — 48 घंटे में जड़ें सड़ जाती हैं। वर्षा पर्याप्त हो तो सिंचाई नहीं।"
+      "english": "Not applicable.",
+      "marathi": "लागू नाही.",
+      "hindi": "लागू नहीं।"
     },
     "fertilizer": {
-      "english": "Soybean fixes its own nitrogen — do NOT apply urea. At sowing: Phosphorus 60kg/ha + Potash 40kg/ha + Sulphur 20kg/ha. Apply Zinc Sulphate 25kg/ha if soil is zinc deficient.",
-      "marathi": "सोयाबीन स्वतःचे नत्र तयार करते — युरिया देऊ नका. पेरणीच्या वेळी: स्फुरद 60 किलो/हेक्टर + पोटॅश 40 किलो/हेक्टर + गंधक 20 किलो/हेक्टर. जमिनीत जस्त कमी असल्यास जिंक सल्फेट 25 किलो/हेक्टर द्या.",
-      "hindi": "सोयाबीन अपना नाइट्रोजन खुद बनाता है — यूरिया न दें। बुवाई पर: फास्फोरस 60 किग्रा/हेक्टेयर + पोटाश 40 किग्रा/हेक्टेयर + सल्फर 20 किग्रा/हेक्टेयर। मिट्टी में जिंक कमी हो तो जिंक सल्फेट 25 किग्रा/हेक्टेयर दें।"
-    }
-  },
-  "Cotton___healthy": {
-    "crop": {
-      "english": "Cotton",
-      "marathi": "कापूस",
-      "hindi": "कपास"
-    },
-    "disease": {
-      "english": "Healthy",
-      "marathi": "निरोगी",
-      "hindi": "स्वस्थ"
-    },
-    "severity": {
-      "english": "None",
-      "marathi": "नाही",
-      "hindi": "कोई नहीं"
-    },
-    "symptoms": {
-      "english": "No disease detected. Your cotton crop looks healthy!",
-      "marathi": "कोणताही रोग आढळला नाही. तुमचे कापसाचे पीक निरोगी आहे!",
-      "hindi": "कोई रोग नहीं मिला। आपकी कपास की फसल स्वस्थ है!"
-    },
-    "treatment": {
-      "english": "No treatment needed. Continue regular monitoring and care.",
-      "marathi": "उपचाराची गरज नाही. नियमित निरीक्षण आणि काळजी सुरू ठेवा.",
-      "hindi": "उपचार की जरूरत नहीं। नियमित निगरानी और देखभाल जारी रखें।"
-    },
-    "prevention": {
-      "english": "Monitor weekly for bollworm, whitefly and pink bollworm. Use pheromone traps for early detection.",
-      "marathi": "बोंड अळी, पांढरी माशी आणि गुलाबी बोंड अळीसाठी आठवड्यातून तपासा. लवकर ओळखण्यासाठी फेरोमोन सापळे वापरा.",
-      "hindi": "बॉलवर्म, सफेद मक्खी और गुलाबी बॉलवर्म के लिए साप्ताहिक जांचें। जल्दी पहचान के लिए फेरोमोन जाल उपयोग करें।"
-    },
-    "sowing": {
-      "english": "Best time: May 15 to June 30 in Maharashtra. Seed rate: Bt cotton 450g/acre. Row spacing 90x60 cm for dryland, 120x60 cm for irrigated. Depth 3-4 cm.",
-      "marathi": "महाराष्ट्रात सर्वोत्तम वेळ: 15 मे ते 30 जून. बियाणे दर: Bt कापूस 450 ग्रॅम/एकर. कोरडवाहूसाठी ओळ अंतर 90x60 सेमी, बागायतीसाठी 120x60 सेमी. खोली 3-4 सेमी.",
-      "hindi": "महाराष्ट्र में सर्वोत्तम समय: 15 मई से 30 जून। बीज दर: Bt कपास 450 ग्राम/एकड़। वर्षाश्रित के लिए कतार दूरी 90x60 सेमी, सिंचित के लिए 120x60 सेमी। गहराई 3-4 सेमी।"
-    },
-    "irrigation": {
-      "english": "Cotton needs 700-1200mm per season. Critical stages: Square formation (45 days), Flowering (60-70 days), Boll development (90-110 days). Irrigate every 10-15 days in dry spells. Avoid waterlogging.",
-      "marathi": "कापसाला हंगामात 700-1200 मिमी पाणी लागते. महत्त्वाचे टप्पे: पेटी तयार होणे (45 दिवस), फुलोरा (60-70 दिवस), बोंड विकास (90-110 दिवस). कोरड्या काळात दर 10-15 दिवसांनी पाणी द्या. साचलेले पाणी टाळा.",
-      "hindi": "कपास को प्रति सीजन 700-1200 मिमी पानी चाहिए। महत्वपूर्ण अवस्थाएं: स्क्वायर बनना (45 दिन), फूल (60-70 दिन), बॉल विकास (90-110 दिन)। सूखे में हर 10-15 दिन सिंचाई करें। जलभराव से बचें।"
-    },
-    "fertilizer": {
-      "english": "At sowing: DAP 50kg/acre + Potash 25kg/acre + FYM 5 tons/acre. At 30 days: Urea 25kg/acre. At flowering: Urea 15kg/acre + Potash 15kg/acre. Micronutrient spray of Boron 1g/litre at boll formation.",
-      "marathi": "पेरणीच्या वेळी: DAP 50 किलो/एकर + पोटॅश 25 किलो/एकर + शेणखत 5 टन/एकर. 30 दिवसांनी: युरिया 25 किलो/एकर. फुलोऱ्यावर: युरिया 15 किलो/एकर + पोटॅश 15 किलो/एकर. बोंड तयार होताना बोरॉन 1 ग्रॅम/लिटर फवारा.",
-      "hindi": "बुवाई पर: DAP 50 किग्रा/एकड़ + पोटाश 25 किग्रा/एकड़ + FYM 5 टन/एकड़। 30 दिन पर: यूरिया 25 किग्रा/एकड़। फूल पर: यूरिया 15 किग्रा/एकड़ + पोटाश 15 किग्रा/एकड़। बॉल बनते समय बोरान 1 ग्राम/लीटर छिड़काव।"
-    }
-  },
-  "Cotton___Bacterial_blight": {
-    "crop": {
-      "english": "Cotton",
-      "marathi": "कापूस",
-      "hindi": "कपास"
-    },
-    "disease": {
-      "english": "Bacterial Blight",
-      "marathi": "जिवाणूजन्य करपा",
-      "hindi": "जीवाणु झुलसा"
-    },
-    "severity": {
-      "english": "High",
-      "marathi": "जास्त",
-      "hindi": "अधिक"
-    },
-    "symptoms": {
-      "english": "Water-soaked angular spots on leaves turning brown. Veins turn black. Bolls show black rot. Severe cases cause defoliation.",
-      "marathi": "पानांवर पाण्याने भिजल्यासारखे कोनीय डाग तपकिरी होतात. शिरा काळ्या पडतात. बोंडांवर काळे कुजणे. तीव्र प्रकरणात पाने गळतात.",
-      "hindi": "पत्तियों पर पानी से भीगे कोणीय धब्बे भूरे हो जाते हैं। शिराएं काली पड़ जाती हैं। बॉल पर काला सड़न। गंभीर मामलों में पत्तियां झड़ जाती हैं।"
-    },
-    "treatment": {
-      "english": "Spray Copper Oxychloride 50WP at 3g per litre. Repeat every 10 days. Remove badly infected plants. Do not spray during rain.",
-      "marathi": "कॉपर ऑक्सीक्लोराईड 50WP 3 ग्रॅम प्रति लिटर पाण्यात फवारा. दर 10 दिवसांनी पुन्हा करा. जास्त संक्रमित झाडे काढा. पावसात फवारणी करू नका.",
-      "hindi": "कॉपर ऑक्सीक्लोराइड 50WP 3 ग्राम प्रति लीटर पानी में छिड़काव करें। हर 10 दिन दोहराएं। अधिक संक्रमित पौधे हटाएं। बारिश में छिड़काव न करें।"
-    },
-    "prevention": {
-      "english": "Use resistant varieties like Suraj, Pratap. Treat seeds with Streptocycline before sowing. Avoid working in wet fields — spreads bacteria.",
-      "marathi": "सूरज, प्रताप सारख्या प्रतिरोधक वाणाचा वापर करा. पेरणीपूर्वी स्ट्रेप्टोसायक्लिनने बीजप्रक्रिया करा. ओल्या शेतात काम टाळा — जिवाणू पसरतात.",
-      "hindi": "सूरज, प्रताप जैसी प्रतिरोधी किस्में उपयोग करें। बुवाई से पहले स्ट्रेप्टोसाइक्लिन से बीज उपचार करें। गीले खेत में काम से बचें — बैक्टीरिया फैलता है।"
-    },
-    "sowing": {
-      "english": "Use certified disease-free seed. Best time May 15 to June 30. Row spacing 90x60 cm. Treat seeds before sowing.",
-      "marathi": "प्रमाणित रोगमुक्त बियाणे वापरा. सर्वोत्तम वेळ 15 मे ते 30 जून. ओळ अंतर 90x60 सेमी. पेरणीपूर्वी बीजप्रक्रिया करा.",
-      "hindi": "प्रमाणित रोगमुक्त बीज उपयोग करें। सर्वोत्तम समय 15 मई से 30 जून। कतार दूरी 90x60 सेमी। बुवाई से पहले बीज उपचार करें।"
-    },
-    "irrigation": {
-      "english": "Avoid overhead irrigation. Use furrow or drip. Do not irrigate when disease is active — wet conditions spread bacteria rapidly.",
-      "marathi": "वरून पाणी देणे टाळा. सरी किंवा ठिबक पद्धत वापरा. रोग सक्रिय असताना पाणी देऊ नका — ओल्या वातावरणात जिवाणू वेगाने पसरतो.",
-      "hindi": "ऊपर से सिंचाई न करें। नाली या ड्रिप विधि उपयोग करें। रोग सक्रिय होने पर सिंचाई न करें — गीली परिस्थितियों में बैक्टीरिया तेजी से फैलता है।"
-    },
-    "fertilizer": {
-      "english": "Reduce nitrogen during disease — excess nitrogen worsens bacterial blight. Maintain normal Phosphorus and Potash schedule.",
-      "marathi": "रोगाच्या काळात नत्र कमी करा — जास्त नत्राने जिवाणू करपा वाढतो. स्फुरद आणि पोटॅशचे नियमित वेळापत्रक सुरू ठेवा.",
-      "hindi": "रोग के दौरान नाइट्रोजन कम करें — अधिक नाइट्रोजन जीवाणु झुलसा बढ़ाता है। फास्फोरस और पोटाश का नियमित कार्यक्रम जारी रखें।"
+      "english": "Not applicable.",
+      "marathi": "लागू नाही.",
+      "hindi": "लागू नहीं।"
     }
   }
 }
