@@ -67,7 +67,7 @@ function InputContent() {
     const tflite = window.tflite;
     // @ts-ignore 
     const tf = window.tf;  
-    tflite.setWasmPath('https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.10/dist/');
+    tflite.setWasmPath('https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.8/dist/'); 
     const model = await tflite.loadTFLiteModel("/model/cropmind_model.tflite");
 
     const imgElement = document.createElement("img");
