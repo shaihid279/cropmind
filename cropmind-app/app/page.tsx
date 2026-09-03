@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import adviceDb from "../data/advice_db.json";
+import adviceDb from "../public/data/advice_db.json"; 
 import { useLanguage } from "../components/LanguageContext";
 import { Lang } from "../lib/i18n";
 
