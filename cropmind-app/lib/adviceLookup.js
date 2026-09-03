@@ -1,5 +1,5 @@
-import adviceDb from "../data/advice_db.json";
-import labels from "../data/labels.json";
+import adviceDb from '../public/data/advice_db.json';
+import labels from "../public/data/labels.json"; 
 
 // predictedIndex = model ka output number (0, 1, 2...)
 // language = "english" | "hindi" | "marathi"
