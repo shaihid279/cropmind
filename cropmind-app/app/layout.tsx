@@ -1,3 +1,4 @@
+import ServiceWorkerRegister from '@/components/ServiceWorkerRegister';
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
@@ -28,6 +29,7 @@ export default function RootLayout({
             </OnboardingGate>
           </ToastProvider>
         </LanguageProvider>
+        <ServiceWorkerRegister /> 
         <Script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js" strategy="beforeInteractive" />
         <Script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.8/dist/tf-tflite.min.js" strategy="beforeInteractive" /> 
       </body>
