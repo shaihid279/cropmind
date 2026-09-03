@@ -1,8 +1,18 @@
-const CACHE_NAME = 'kisanscan-v1';
+const CACHE_NAME = 'kisanscan-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/input',
   '/result',
+  '/my-crops',
+  '/community',
+  '/chat',
+  '/assistant',
+  '/trends',
+  '/outbreak',
+  '/risk',
+  '/profile',
+  '/settings',
+  '/offline.html',
   '/model/cropmind_model.tflite',
   '/data/advice_db.json',
   '/data/labels.json',
@@ -11,7 +21,13 @@ const ASSETS_TO_CACHE = [
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE);
+      return Promise.all(
+        ASSETS_TO_CACHE.map((url) =>
+          cache.add(url).catch((err) => {
+            console.log('Failed to cache:', url, err);
+          })
+        )
+      );
     })
   );
   self.skipWaiting();
@@ -36,7 +52,12 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
           return response;
         })
-        .catch(() => cached);
+        .catch(() => {
+          if (event.request.mode === 'navigate') {
+            return caches.match('/offline.html');
+          }
+          return cached;
+        });
     })
   );
 }); 
